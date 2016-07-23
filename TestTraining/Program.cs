@@ -967,7 +967,7 @@ namespace TestTraining
         }
     }
 }
-*/
+
 
 //  Применение укороченных логических операторов.
 
@@ -1003,6 +1003,41 @@ namespace TestTraining
             // if (d != 0 & (n % d) == 0)
             //    Console.WriteLine(n + " делится нацело на " + d);
             // Console.WriteLine();
+        }
+    }
+}
+*/
+
+//  Значение побочных эффектов.
+
+using System;
+
+namespace TestTraining
+{
+    class SideEffects
+    {
+        static void Main()
+        {
+            int i;
+            bool someCondition = false;
+
+            i = 0;
+
+            // Значение переменной i инкрементируется,
+            // несмотря на то, что оператор if не выполняется.
+
+            if(someCondition & ( ++i < 100))
+                Console.WriteLine(" He выводится ");
+            Console.WriteLine(" Оператор if выполняется и = " + i); // выводится 1
+            Console.WriteLine();
+
+            // В данном случае значение переменной i не инкрементируется,
+            // поскольку инкремент в укороченном логическом операторе опускается.
+
+            if (someCondition && (++i < 100))
+                Console.WriteLine(" Не выводиться ");
+            Console.WriteLine(" Оператор if выполняестя и = " + i); // по-прежнему 1 !!
+            Console.WriteLine();
         }
     }
 }
