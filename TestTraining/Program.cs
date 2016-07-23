@@ -932,5 +932,16 @@ namespace TestTraining
 }
 */
 
+using System;
 
+namespace TestTraining
+{
+    class Test
+    {
+        static void Main()
+        {
+
+        }
+    }
+}
 
