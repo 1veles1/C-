@@ -930,7 +930,7 @@ namespace TestTraining
         }
     }
 }
-*/
+
 
 // Построение операции импликации в С#.
 
@@ -967,4 +967,42 @@ namespace TestTraining
         }
     }
 }
+*/
 
+//  Применение укороченных логических операторов.
+
+using System;
+
+namespace TestTraining
+{
+    class SCops
+    {
+        static void Main()
+        {
+            int n;
+            int d;
+
+            n = 10;
+            d = 2;
+
+            if (d != 0 && (n % d) == 0)
+                Console.WriteLine(n + " делиться нацело на " + d);
+            Console.WriteLine();
+
+            d = 0; // задать нулевое значение переменной d
+
+            // d равно нулю, поэтому второй операнд не вычисляется
+
+            if (d != 0 && (n % d) == 0)
+                Console.WriteLine(n + " делиться нацело на " + d);
+            Console.WriteLine();
+
+            // Если теперь попытаться сделать то же самое без укороченного
+            // логического оператора, то возникнет ошибка из-за деления на нуль.
+
+            // if (d != 0 & (n % d) == 0)
+            //    Console.WriteLine(n + " делится нацело на " + d);
+            // Console.WriteLine();
+        }
+    }
+}
