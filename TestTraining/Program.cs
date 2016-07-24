@@ -1038,11 +1038,12 @@ namespace TestTraining
                 Console.WriteLine(" Не выводиться ");
             Console.WriteLine(" Оператор if выполняестя и = " + i); // по-прежнему 1 !!
             Console.WriteLine();
+            
+            System.Console.ReadKey();
         }
     }
 }
-*/
-
+ 
 // NULL
 
 using System;
@@ -1111,3 +1112,35 @@ namespace TestTraining
         }
     }
 }
+*/
+
+// Поразрядный оператор И
+
+using System;
+
+namespace TestTraining
+{
+    class MakeEvan
+    {
+        static void Main()
+        {
+            ushort num;
+            ushort i;
+
+            for(i = 0; i <= 10; i++)
+            {
+                num = i;
+
+                Console.WriteLine(" num = " + num);
+
+                num = (ushort)(num & 0xFFFE);
+
+                Console.WriteLine(" num после сброса младшего разряда = " + num + " \n ");
+                Console.WriteLine();
+                Console.ReadKey();
+            }
+                // Console.ReadKey();
+        }
+    }
+}
+
