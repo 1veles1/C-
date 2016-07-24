@@ -1171,7 +1171,7 @@ namespace TestTraining
         }
     }
 }
-*/
+
 
 // Показать биты, составляющие байт.
 
@@ -1194,6 +1194,34 @@ namespace TestTraining
                 if ((val & t) == 0) Console.Write(" 0 ");
             }
             // Console.WriteLine();
+            Console.ReadKey();
+        }
+    }
+}
+*/
+
+// Применить поразрядный оператор ИЛИ, чтобы сделать число нечетным.
+
+using System;
+
+namespace TestTraining
+{
+    class MakeOdd
+    {
+        static void Main()
+        {
+            ushort num;
+            ushort i;
+
+            for(i = 1; i <= 10; i++)
+            {
+                num = i;
+                Console.WriteLine(" num = " + num);
+
+                num = (ushort)(num | 1);
+                Console.WriteLine(" num после установки младшего разряда = " + num + " \n ");
+                Console.WriteLine();
+                }
             Console.ReadKey();
         }
     }
