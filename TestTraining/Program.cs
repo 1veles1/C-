@@ -1143,7 +1143,7 @@ namespace TestTraining
         }
     }
 }
-*/
+
 
 // Применить поразрядный оператор И, чтобы определить,
 // является ли число нечетным.
@@ -1168,6 +1168,33 @@ namespace TestTraining
             if ((num & 1) == 1)
             Console.WriteLine(num + " — нечетное число.");
 
+        }
+    }
+}
+*/
+
+// Показать биты, составляющие байт.
+
+using System;
+
+namespace TestTraining
+{
+    class ShowBits
+    {
+        static void Main()
+        {
+            int t;
+            byte val;
+
+            val = 123;
+
+            for(t = 128; t > 0; t = t / 2)
+            {
+                if ((val & t) != 0) Console.Write(" 1 ");
+                if ((val & t) == 0) Console.Write(" 0 ");
+            }
+            // Console.WriteLine();
+            Console.ReadKey();
         }
     }
 }
