@@ -1268,7 +1268,6 @@ namespace TestTraining
         }
     }
 }
-*/
 
 // Применение поразрядного унарного оператора НЕ.
 
@@ -1303,3 +1302,5 @@ namespace TestTraining
         }
     }
 }
+*/
+
