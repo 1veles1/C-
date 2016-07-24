@@ -1226,7 +1226,7 @@ namespace TestTraining
         }
     }
 }
-*/
+
 
 // Применение поразрядного оператора исключающее ИЛИ.
 
@@ -1264,6 +1264,41 @@ namespace TestTraining
             Console.WriteLine(" Расшифрованное сообщение = " + ch1 + ch2 + ch3);
             Console.WriteLine();
 
+            Console.ReadKey();
+        }
+    }
+}
+*/
+
+// Применение поразрядного унарного оператора НЕ.
+
+using System;
+
+namespace TestTraining
+{
+    class NotDemo
+    {
+        static void Main()
+        {
+            sbyte b = -34;
+
+            for (int t = 128; t > 0; t = t / 2)
+            {
+                if ((b & t) != 0) Console.Write(" 1 ");
+                if ((b & t) == 0) Console.Write(" 0 ");
+            }
+            Console.WriteLine();
+
+            // Обратить все типы
+
+            b = (sbyte)~b;
+
+            for (int t = 128; t > 0; t = t / 2)
+            {
+                if ((b & t) != 0) Console.Write(" 1 ");
+                if ((b & t) == 0) Console.Write(" 0 ");
+            }
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
