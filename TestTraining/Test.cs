@@ -1349,7 +1349,7 @@ namespace Test
         }
     }
 }
-*/
+
 // Операторы сдвига для умножения и деления
 
 using System;
@@ -1406,6 +1406,30 @@ namespace Tset
             // Console.WriteLine("Значение переменной d после сдвига на 30 позиций влево =  " + d);
             Console.WriteLine();
 
+            Console.ReadKey();
+        }
+    }
+}
+*/
+// Исключить деление на нуль, используя оператор?.
+
+using System;
+
+namespace Tset
+{
+    class NOZeroDiv
+    {
+        static void Main()
+        {
+            int result;
+
+            for(int i = -5; i < 6; i++)
+            {
+                result = i != 0 ? 100 / i : 0;
+                if (i != 0)
+                    Console.WriteLine(" 100 / " + i + " = " + result);
+                Console.WriteLine();
+            }
             Console.ReadKey();
         }
     }
