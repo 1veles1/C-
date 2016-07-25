@@ -1361,6 +1361,7 @@ namespace Tset
         static void Main()
         {
             int n = 10;
+            // long d = 10;
 
             Console.WriteLine(" Значение переменной n =  " + n);
             Console.WriteLine();
@@ -1399,7 +1400,10 @@ namespace Tset
             // Умножить на 2 тридцать раз.
 
             n = n << 30; // данные теряются
-            Console.WriteLine("Значение переменной п после сдвига на 30 позиций влево =  " + n);
+            Console.WriteLine("Значение переменной n после сдвига на 30 позиций влево =  " + n);
+            // d = d << 30;      данные не теряются поскольку двоичные  разряды  сдвигаются  
+            //                            за  пределы  представления  чисел  для  типа  int
+            // Console.WriteLine("Значение переменной d после сдвига на 30 позиций влево =  " + d);
             Console.WriteLine();
 
             Console.ReadKey();
