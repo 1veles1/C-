@@ -1302,7 +1302,7 @@ namespace TestTraining
         }
     }
 }
-*/
+
 
 // Применение операторов сдвига.
 
@@ -1345,6 +1345,63 @@ namespace Test
 
                 val = val >> 1; // сдвиг вправо
                 }
+            Console.ReadKey();
+        }
+    }
+}
+*/
+// Операторы сдвига для умножения и деления
+
+using System;
+
+namespace Tset
+{
+    class MultDiv
+    {
+        static void Main()
+        {
+            int n = 10;
+
+            Console.WriteLine(" Значение переменной n =  " + n);
+            Console.WriteLine();
+
+            // Умножить на 2.
+
+            n = n << 1;
+            Console.WriteLine(" Значение переменной n после операции n = n * 2 = " + n);
+            Console.WriteLine();
+
+            // Умножить на 4.
+
+            n = n << 2;
+            Console.WriteLine(" Значение переменной n после операции n = n * 4 = " + n);
+            Console.WriteLine();
+
+            // Разделить на 2.
+
+            n = n >> 2;
+            Console.WriteLine(" Значение переменной n после операции n = n / 2 = " + n);
+            Console.WriteLine();
+
+            // Разделить на 4. 
+
+            n = n >> 4;
+            Console.WriteLine(" Значение переменной n после операции n = n / 4 = " + n);
+            Console.WriteLine();
+
+            // Установить переменную n в исходное состояние.
+
+            n = 10;
+
+            Console.WriteLine(" Значение переменной n = " + n);
+            Console.WriteLine();
+
+            // Умножить на 2 тридцать раз.
+
+            n = n << 30; // данные теряются
+            Console.WriteLine("Значение переменной п после сдвига на 30 позиций влево =  " + n);
+            Console.WriteLine();
+
             Console.ReadKey();
         }
     }
