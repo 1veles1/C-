@@ -1410,7 +1410,7 @@ namespace Tset
         }
     }
 }
-*/
+
 // Исключить деление на нуль, используя оператор?.
 
 using System;
@@ -1428,6 +1428,27 @@ namespace Tset
                 result = i != 0 ? 100 / i : 0;
                 if (i != 0)
                     Console.WriteLine(" 100 / " + i + " = " + result);
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+        }
+    }
+}
+*/
+// Разделить только на четные, ненулевые значения.
+
+using System;
+
+namespace Tset
+{
+    class NoZeroDiv2
+    {
+        static void Main()
+        {
+            for (int i = -5; i < 6; i++)
+            {
+                if (i != 0 ? (i % 2 == 0) : false)
+                    Console.WriteLine(" 100 / " + i + " = " + 100 / i);
                 Console.WriteLine();
             }
             Console.ReadKey();
