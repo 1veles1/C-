@@ -1,0 +1,6 @@
+H:\C#\TestTraining\TestTraining\bin\Debug\TestTraining.exe.config
+H:\C#\TestTraining\TestTraining\bin\Debug\TestTraining.exe
+H:\C#\TestTraining\TestTraining\bin\Debug\TestTraining.pdb
+H:\C#\TestTraining\TestTraining\obj\Debug\TestTraining.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\TestTraining\obj\Debug\TestTraining.exe
+H:\C#\TestTraining\TestTraining\obj\Debug\TestTraining.pdb
