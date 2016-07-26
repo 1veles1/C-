@@ -1,62 +1,44 @@
-﻿//  Калькулятор 
+﻿// Метод хорд. Алгоритм
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Test
+namespace metodHord
 {
-    class Prog
+    class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            double a;
-            double b;
-            double total;
-            char oper;
-
-            Console.ForegroundColor = ConsoleColor.Red;
-
-            Console.WriteLine("\n" + " Введите первое число = " + "\n");
-            a = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("\n" + " Введите оператор = " + "\n");
-            oper = Convert.ToChar(Console.ReadLine());
-
-            Console.WriteLine("\n" + " Введите второе число = " + "\n");
-            b = Convert.ToDouble(Console.ReadLine());
-
-            if (oper == '+')
-            {
-                total = a + b;
-                Console.WriteLine("\n" + " Cумма " + a + " и " + b + " = " + total + "." + "\n");
-                Console.WriteLine();
-            }
-
-            else if (oper == '-')
-            {
-                total = a - b;
-                Console.WriteLine("\n" + " Разность " + a + " и " + b + " = " + total + "." + "\n");
-                Console.WriteLine();
-            }
-
-            else if (oper == '*')
-            {
-                total = a * b;
-                Console.WriteLine("\n" + " Умножение " + a + " * " + b + " = " + total + "." +  "\n");
-                Console.WriteLine();
-            }
-
-            else if (oper == '/')
-            {
-                total = a / b;
-                Console.WriteLine("\n" + " Деление " + a + " / " + b + " = " + total + "." + "\n");
-                Console.WriteLine();
-            }
-            else
-            {
-                Console.WriteLine("\n" + " Неизвестный оператор. ");
-            }
-            Console.WriteLine(" Done ");
+            double x0 = 2;
+            double x1 = 10;
+            double e = 0.001;
+            double x = method_chord(x0, x1, e);
+            Console.WriteLine(x);
             Console.ReadLine();
+        }
+
+        public static double method_chord(double x_prev, double x_curr, double e)
+        {
+            double x_next = 0;
+            double tmp;
+
+            do
+            {
+                tmp = x_next;
+                x_next = x_curr - f(x_curr) * (x_prev - x_curr) / (f(x_prev) - f(x_curr));
+                x_prev = x_curr;
+                x_curr = tmp;
+            } while (Math.Abs(x_next - x_curr) > e);
+
+            return x_next;
+        }
+
+        public static double f(double x)
+        {
+            return Math.Pow(x, 3) - 18 * x - 83;
         }
     }
 }
