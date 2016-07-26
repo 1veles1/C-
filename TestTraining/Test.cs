@@ -1510,10 +1510,11 @@ namespace Test
 
             for( i = -5; i <= 5; i++)
             {
-                Console.WriteLine(" Проверка " + i);
-                if (i < 0) Console.WriteLine(" отрицательное число " + " \n " );
-                else if (i == 0) Console.WriteLine(" чмсло без знака " + " \n ");
-                else Console.WriteLine(" положительное число " + " \n "); 
+                Console.Write(" Проверка числа " + i + " = ");
+                if (i < 0) Console.Write(" отрицательное число " + " \n ");
+                else if (i == 0) Console.Write(" чмсло без знака " + " \n ");
+                else Console.Write(" положительное число " + " \n");
+                Console.WriteLine(); 
             }
             Console.WriteLine();
             Console.WriteLine(" Done ");
