@@ -1492,7 +1492,7 @@ namespace Test
         }
     }
 }
-*/
+
 // Определить, является ли числовое значение
 // положительным, отрицательным или нулевым.
 
@@ -1520,8 +1520,10 @@ namespace Test
             Console.WriteLine(" Done ");
             Console.WriteLine();
             Console.Beep();
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
+*/
+
 
