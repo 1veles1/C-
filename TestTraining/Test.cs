@@ -1456,3 +1456,39 @@ namespace Tset
     }
 }
 */
+
+// Определить, является ли числовое значение положительным или отрицательным.
+
+using System;
+
+namespace Test
+{
+    class PosNeg
+    {
+        static void Main()
+        {
+
+            int i;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+           
+            for (i = -5; i <= 5; i++)
+            {
+                Console.Write(" Проверка " + i + " \n " );
+                if (i < 0) Console.WriteLine(" отрицательное число" );
+                else Console.WriteLine(" положительное число " );
+            }
+            Console.WriteLine();
+
+            for (i = -5; i <= 5; i++)
+            {
+                Console.Beep();
+            }
+
+            Console.WriteLine(" Done ");
+            Console.ReadKey();
+
+        }
+    }
+}
+
