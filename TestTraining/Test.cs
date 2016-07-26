@@ -1,44 +1,39 @@
-﻿// Метод хорд. Алгоритм
+﻿// Определить наименьший множитель заданного
+// целого значения, состоящий из одной цифры.
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace metodHord
+namespace Test
 {
-    class Program
+    class Ladder
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            double x0 = 2;
-            double x1 = 10;
-            double e = 0.001;
-            double x = method_chord(x0, x1, e);
-            Console.WriteLine(x);
-            Console.ReadLine();
-        }
+            int num;
 
-        public static double method_chord(double x_prev, double x_curr, double e)
-        {
-            double x_next = 0;
-            double tmp;
+            Console.ForegroundColor = ConsoleColor.Red;
 
-            do
+            for( num = 2; num < 12; num++)
             {
-                tmp = x_next;
-                x_next = x_curr - f(x_curr) * (x_prev - x_curr) / (f(x_prev) - f(x_curr));
-                x_prev = x_curr;
-                x_curr = tmp;
-            } while (Math.Abs(x_next - x_curr) > e);
+                if ((num % 2) == 0)
+                    Console.WriteLine(" Наименьший множитель числа " + num + " = 2 " + "\n");
+                else if ((num % 3) == 0)
+                    Console.WriteLine(" Наименьший множитель числа " + num + " = 3 " + "\n");
+                else if ((num % 5) == 0)
+                    Console.WriteLine(" Наименьший множитель числа " + num + " = 5" + " \n");
+                else if ((num % 7) == 0)
+                    Console.WriteLine(" Наименьший множитель числа " + num + " = 7" + "\n");
+                else
+                    Console.WriteLine(" Число " + num + " не делится на 2, 3, 5 или 7");
+            }
+            Console.WriteLine();
+            Console.Beep();
+            Console.WriteLine(" Done ");
+            Console.ResetColor();
+            Console.ReadLine();
+            Console.Clear();
+            
 
-            return x_next;
-        }
-
-        public static double f(double x)
-        {
-            return Math.Pow(x, 3) - 18 * x - 83;
         }
     }
 }
