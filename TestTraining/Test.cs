@@ -1,4 +1,5 @@
-﻿// Определить наименьший множитель заданного
+﻿/*
+// Определить наименьший множитель заданного
 // целого значения, состоящий из одной цифры.
 
 using System;
@@ -34,6 +35,50 @@ namespace Test
             Console.Clear();
             
 
+        }
+    }
+}
+*/
+// Продемонстрировать применение оператора switch.
+
+using System;
+
+namespace Test
+{
+    class SwitchDemo
+    {
+        static void Main()
+        {
+            int i;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            
+            for(i = 0; i < 10; i++)
+                switch (i)
+                {
+                    case 0:
+                        Console.WriteLine(" i = 0 " + "\n");
+                        break;
+                    case 1:
+                        Console.WriteLine(" i = 1 " + "\n");
+                        break;
+                    case 2:
+                        Console.WriteLine(" i = 2 " + "\n");
+                        break;
+                    case 3:
+                        Console.WriteLine(" i = 3 " + "\n");
+                        break;
+                    case 4:
+                        Console.WriteLine(" i = 4" + "\n");
+                        break;
+                    default:
+                        Console.WriteLine(" i = | > 5 " + "\n");
+                        break;
+             }
+            Console.WriteLine(" Done ");
+            Console.ReadKey();
+            Console.Clear();
+            Console.Beep();
         }
     }
 }
