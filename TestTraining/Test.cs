@@ -1,55 +1,62 @@
-﻿// Пример глупой сортировки 
+﻿//  Калькулятор 
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace StupidSort
+namespace Test
 {
-    class Program
+    class Prog
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int[] array = new int[10];
-            Random rand = new Random();
+            double a;
+            double b;
+            double total;
+            char oper;
 
             Console.ForegroundColor = ConsoleColor.Red;
 
-            for (int i = 0; i < array.Length; i++)
-                array[i] = rand.Next(0, 10);
+            Console.WriteLine("\n" + " Введите первое число = " + "\n");
+            a = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine(" Исходная последовательность ");
-            for (int i = 0; i < array.Length; i++)
-                Console.Write(array[i] + "\t" + "\n");
-            Console.WriteLine();
+            Console.WriteLine("\n" + " Введите оператор = " + "\n");
+            oper = Convert.ToChar(Console.ReadLine());
 
-            stupidSort(array);
+            Console.WriteLine("\n" + " Введите второе число = " + "\n");
+            b = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine(" \n Отсортированная последовательность ");
-            for (int i = 0; i < array.Length; i++)
-                Console.Write(array[i] + "\t" + "\n");
-            Console.WriteLine();
+            if (oper == '+')
+            {
+                total = a + b;
+                Console.WriteLine("\n" + " Cумма " + a + " и " + b + " = " + total + "." + "\n");
+                Console.WriteLine();
+            }
 
+            else if (oper == '-')
+            {
+                total = a - b;
+                Console.WriteLine("\n" + " Разность " + a + " и " + b + " = " + total + "." + "\n");
+                Console.WriteLine();
+            }
+
+            else if (oper == '*')
+            {
+                total = a * b;
+                Console.WriteLine("\n" + " Умножение " + a + " * " + b + " = " + total + "." +  "\n");
+                Console.WriteLine();
+            }
+
+            else if (oper == '/')
+            {
+                total = a / b;
+                Console.WriteLine("\n" + " Деление " + a + " / " + b + " = " + total + "." + "\n");
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("\n" + " Неизвестный оператор. ");
+            }
+            Console.WriteLine(" Done ");
             Console.ReadLine();
         }
-
-        static void stupidSort(int[] arr)
-        {
-            int i = 0, tmp;
-            while (i < arr.Length - 1)
-            {
-                if (arr[i + 1] < arr[i])
-                {
-                    tmp = arr[i];
-                    arr[i] = arr[i + 1];
-                    arr[i + 1] = tmp;
-                    i = 0;
-                }
-                else i++;
-            }
-        }
-
     }
 }
