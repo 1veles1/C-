@@ -267,7 +267,7 @@ namespace Test
     
     }
 }
-*/
+
 // Использовать запятые в операторе цикла for для
 // выявления наименьшего и наибольшего множителя числа.
 
@@ -299,6 +299,35 @@ namespace Test
             Console.WriteLine(" Наибольший множитель = " + largest + "\n");
             Console.WriteLine(" Наименьший множитель = " + smallest + "\n");
 
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Условием выполнения цикла может служить любое выражение типа bool.
+
+using System;
+
+namespace Test
+{
+    class forDemo
+    {
+        static void Main()
+        {
+            int i;
+            int j;
+            bool done = false;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            for (i = 0, j = 100; !done; i++, j--)
+            {
+                if (i * i >= j) done = true;
+                Console.WriteLine(" i и j = " + i + " и " + j + "\n");
+            }
             Console.WriteLine(" Done ");
             Console.ReadLine();
             Console.Clear();
