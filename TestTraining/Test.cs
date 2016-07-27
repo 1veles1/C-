@@ -82,7 +82,7 @@ namespace Test
         }
     }
 }
-*/
+
 // Использовать элементы типа char для управления оператором switch.
 
 using System;
@@ -118,6 +118,41 @@ namespace Test
                 }
             Console.WriteLine(" Done ");
             Console.ReadLine();
+            Console.Beep();
+        }
+    }
+}
+*/
+
+// Пример "проваливания" пустых ветвей case.
+
+using System;
+
+namespace Test
+{
+    class EmptyCasesCanFall
+    {
+        static void Main()
+        {
+            int i;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            for(i = 0; i < 5; i++)
+                switch (i)
+                {
+                    case 1:
+                    case 2:
+                    case 3:
+                        Console.WriteLine(" i = 1, 2 или 3 " + "\n");
+                        break;
+                    case 4:
+                        Console.WriteLine(" i = 4 " + "\n");
+                        break;
+                }
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
             Console.Beep();
         }
     }
