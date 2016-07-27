@@ -335,7 +335,7 @@ namespace Test
         }
     }
 }
-*/
+
 // Отдельные части цикла for могут оставаться пустыми.
 
 using System;
@@ -351,6 +351,34 @@ namespace Test
             Console.ForegroundColor = ConsoleColor.Red;
 
             for (i = 0; i < 10;)
+            {
+                Console.WriteLine(" Проход № " + i + "\n");
+                i++; // инкрементировать переменную управления циклом
+            }
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Исключить еще одну часть из определения цикла for.
+
+using System;
+
+namespace Test
+{
+    class Empty2
+    {
+        static void Main()
+        {
+            int i;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            i = 0; // исключить инициализацию из определения цикла
+            for(; i < 10;)
             {
                 Console.WriteLine(" Проход № " + i + "\n");
                 i++; // инкрементировать переменную управления циклом
