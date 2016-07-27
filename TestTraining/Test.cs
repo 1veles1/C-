@@ -122,7 +122,7 @@ namespace Test
         }
     }
 }
-*/
+
 
 // Пример "проваливания" пустых ветвей case.
 
@@ -150,6 +150,38 @@ namespace Test
                         Console.WriteLine(" i = 4 " + "\n");
                         break;
                 }
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+//  Выполнение цикла for в отрицательном направлении.
+
+using System;
+
+namespace Test
+{
+    class DecrFor
+    {
+        static void Main()
+        {
+            int x;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            Console.WriteLine(" Выполнение цикла for в отрицательном направлении " + " \n");
+            for (x = 100; x > -100; x -= 5)
+                Console.WriteLine(x + "\n");
+            
+            int y;
+
+            Console.WriteLine(" Выполнение цикла for в положительном направлении " + "\n");
+            for (y = -100; y < 100; y += 5)
+                Console.WriteLine(y + "\n");
+           
             Console.WriteLine(" Done ");
             Console.ReadLine();
             Console.Clear();
