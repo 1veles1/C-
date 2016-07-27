@@ -240,14 +240,14 @@ namespace Test
         }
       }
   }
-*/
+
 // Использовать запятые в операторе цикла for
 
 using System;
 
 namespace Test
 {
-    class Coma
+    class Comma
     {
         static void Main()
         {
@@ -265,5 +265,44 @@ namespace Test
             Console.Beep();
         }
     
+    }
+}
+*/
+// Использовать запятые в операторе цикла for для
+// выявления наименьшего и наибольшего множителя числа.
+
+using System;
+
+namespace Test
+{
+    class Comma
+    {
+        static void Main()
+        {
+            int i;
+            int j;
+            int smallest;
+            int largest;
+            int num;
+
+            num = 100;
+            smallest = largest = 1;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            for ( i = 2, j = num / 2; (i <= num / 2) & (j >= 2); i++, j--){
+                if ((smallest == 1) & ((num % i) == 0))
+                    smallest = i;
+                if ((largest == 1) & ((num % j) == 0))
+                    largest = j;
+            }
+            Console.WriteLine(" Наибольший множитель = " + largest + "\n");
+            Console.WriteLine(" Наименьший множитель = " + smallest + "\n");
+
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
     }
 }
