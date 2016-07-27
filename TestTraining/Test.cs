@@ -464,3 +464,34 @@ namespace Test
     }
 }
 */
+// Калькулятор
+/*
+using System;
+
+namespace FirstApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Calculator calc = new Calculator();
+            calc.Add(2, 3);
+        }
+    }
+
+    // объявление нового класса
+
+    class Calculator
+    {
+        public void Add(int x, int y)
+        {
+            int z = x + y;
+            Console.WriteLine("Сумма {0} и {1} равна {2}", x, y, z, "\n");
+            Console.ReadLine();
+            Console.Beep();
+        }
+    }
+}
+*/
