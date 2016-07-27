@@ -189,7 +189,7 @@ namespace Test
         }
     }
 }
-*/
+
 // Выяснить, является ли число простым. Если оно
 // непростое, вывести наибольший его множитель.
 
@@ -240,3 +240,30 @@ namespace Test
         }
       }
   }
+*/
+// Использовать запятые в операторе цикла for
+
+using System;
+
+namespace Test
+{
+    class Coma
+    {
+        static void Main()
+        {
+            int i;
+            int j;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            for ( i = 0, j = 10; i <= j; i++, j--)
+                    Console.WriteLine(" i и j =  " + i + " и " + j + "\n");
+
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    
+    }
+}
