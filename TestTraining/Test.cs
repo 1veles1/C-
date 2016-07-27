@@ -38,7 +38,7 @@ namespace Test
         }
     }
 }
-*/
+
 // Продемонстрировать применение оператора switch.
 
 using System;
@@ -78,6 +78,46 @@ namespace Test
             Console.WriteLine(" Done ");
             Console.ReadKey();
             Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Использовать элементы типа char для управления оператором switch.
+
+using System;
+
+namespace Test
+{
+    class SwitchDemo2
+    {
+        static void Main()
+        {
+            char ch;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            for(ch = 'A'; ch <= 'E'; ch++)
+                switch (ch)
+                {
+                    case 'A':
+                        Console.WriteLine(" ch содержит А " + "\n");
+                        break;
+                    case 'B':
+                        Console.WriteLine(" ch содержит B " + "\n");
+                        break;
+                    case 'C':
+                        Console.WriteLine(" ch содержит C " + "\n");
+                        break;
+                    case 'D':
+                        Console.WriteLine(" ch содержит D " + "\n");
+                        break;
+                    case 'E':
+                        Console.WriteLine(" ch содержит E " + "\n");
+                        break;
+                }
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
             Console.Beep();
         }
     }
