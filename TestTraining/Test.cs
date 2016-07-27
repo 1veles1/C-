@@ -390,7 +390,7 @@ namespace Test
         }
     }
 }
-*/
+
 // Тело цикла может быть пустым.
 
 using System;
@@ -412,6 +412,41 @@ namespace Test
             {
                 Console.WriteLine(" Сумма = " + sum + "\n");
             }
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Объявить переменную управления циклом в самом цикле for.
+
+using System;
+
+namespace Test
+{
+    class ForVar
+    {
+        static void Main()
+        {
+            int sum = 0;
+            int fact = 1;
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            // вычислить факториал чисел от 1 до 5
+
+            for (int i  = 1; i <= 5; sum += i++)
+            {
+                sum += i; // Переменная i действует в цикле.
+                fact *= i;
+            }
+
+            // А здесь переменная i недоступна.
+
+            Console.WriteLine(" Сумма равна " + sum + "\n");
+            Console.WriteLine(" Факториал равен " + fact + "\n");
             Console.WriteLine(" Done ");
             Console.ReadLine();
             Console.Clear();
