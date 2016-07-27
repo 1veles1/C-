@@ -306,7 +306,7 @@ namespace Test
         }
     }
 }
-*/
+
 // Условием выполнения цикла может служить любое выражение типа bool.
 
 using System;
@@ -327,6 +327,33 @@ namespace Test
             {
                 if (i * i >= j) done = true;
                 Console.WriteLine(" i и j = " + i + " и " + j + "\n");
+            }
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Отдельные части цикла for могут оставаться пустыми.
+
+using System;
+
+namespace Test
+{
+    class Emty
+    {
+        static void Main()
+        {
+            int i;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            for (i = 0; i < 10;)
+            {
+                Console.WriteLine(" Проход № " + i + "\n");
+                i++; // инкрементировать переменную управления циклом
             }
             Console.WriteLine(" Done ");
             Console.ReadLine();
