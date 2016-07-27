@@ -362,7 +362,7 @@ namespace Test
         }
     }
 }
-*/
+
 // Исключить еще одну часть из определения цикла for.
 
 using System;
@@ -382,6 +382,35 @@ namespace Test
             {
                 Console.WriteLine(" Проход № " + i + "\n");
                 i++; // инкрементировать переменную управления циклом
+            }
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Тело цикла может быть пустым.
+
+using System;
+
+namespace Test
+{
+    class Empty3
+    {
+        static void Main()
+        {
+            int i;
+            int sum = 0;
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            // получить сумму чисел от 1 до 5
+
+            for (i = 1; i <= 5; sum += i++)
+            {
+                Console.WriteLine(" Сумма = " + sum + "\n");
             }
             Console.WriteLine(" Done ");
             Console.ReadLine();
