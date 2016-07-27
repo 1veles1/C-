@@ -495,3 +495,36 @@ namespace FirstApp
     }
 }
 */
+// Вычислить порядок величины целого числа. Оператор цикла while
+/*
+using System;
+
+namespace Example
+{
+    class WhileDemo
+    {
+        static void Main()
+        {
+            int num;
+            int mag;
+
+            num = 435679;
+            mag = 0;
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(" Число =  " + num + "\n");
+
+            while (num > 0)
+            {
+                mag++;
+                num = num / 10;
+            }
+            Console.WriteLine(" Порядок величины = " + mag + "\n");
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
