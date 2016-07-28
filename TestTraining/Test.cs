@@ -761,7 +761,7 @@ namespace Test
  }
 */
 // Применить оператор goto в операторе switch.
-
+/*
 using System;
 
 namespace Test
@@ -794,6 +794,41 @@ namespace Test
             
             // goto case 1; // Ошибка! Безусловный переход к оператору switch недопустим.
 
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Продемонстрировать практическое применение оператора goto.
+
+using System;
+
+namespace Test
+{
+    class Use_goto
+    {
+        static void Main()
+        {
+            int i = 0, j = 0, k = 0;
+            for (i = 0; i < 10; i++)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+
+                for (j = 0; j < 10; j++)
+                {
+                    for (k = 0; k < 10; k++)
+                    {
+                        Console.WriteLine(" i, j, k = " + i + " " + j + " " + k + "\n");
+                        if (k == 3) goto stop;
+                    }
+                }
+            }
+        stop:
+            Console.WriteLine(" Остановлено! i, j, k = " + i + ", " + j + " " + k + "\n");
+            Console.WriteLine();
             Console.WriteLine(" Done ");
             Console.ReadLine();
             Console.Clear();
