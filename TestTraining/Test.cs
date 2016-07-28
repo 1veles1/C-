@@ -600,7 +600,7 @@ namespace Test
 }
 */
 // Применить оператор break для выхода из цикла.
-
+/*
 using System;
 
 namespace Test
@@ -620,6 +620,39 @@ namespace Test
 
                 Console.Write(i + " ");
             }
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Применить оператор break для выхода из цикла do-while.
+
+using System;
+
+namespace Test
+{
+    class BreakDemo2
+    {
+        static void Main()
+        {
+            int i = -10;
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            do
+            {
+                if (i > 0)
+                    break;
+
+                Console.Write(i + " ");
+
+                i++;
+            }
+            while (i <= 10);
+
             Console.WriteLine(" Done ");
             Console.ReadLine();
             Console.Clear();
