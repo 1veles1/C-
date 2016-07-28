@@ -528,3 +528,37 @@ namespace Example
     }
 }
 */
+// Вычислить целые степени числа 2.
+
+using System;
+
+namespace Test
+{
+    class Power
+    {
+        static void Main()
+        {
+            int e;
+            int result;
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            for( int i = 0; i < 10; i++)
+            {
+                result = 1;
+                e = i;
+
+                while (e > 0)
+                {
+                    result *= 2;
+                    e--;
+                }
+                Console.WriteLine(" 2 в степени " + i + " = " + result + "\n");
+            }
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
