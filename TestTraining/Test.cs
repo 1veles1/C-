@@ -662,7 +662,7 @@ namespace Test
 }
 */
 // Выявить наименьший множитель числа.
-
+/*
 using System;
 
 namespace Test
@@ -686,6 +686,43 @@ namespace Test
             }
             Console.WriteLine(" Наименьший множитель = " + factor + "\n");
             Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Применить оператор break во вложенных циклах.
+
+using System;
+
+namespace Test
+{
+    class BreakNested
+    {
+        static void Main()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine(" Подсчет во внешнем цикле = " + i + "\n");
+                Console.Write(" Подсчет во внутреннем цикле = ");
+
+                int t = 0;
+                while (t < 100)
+                {
+                    if (t == 10)
+                        break; // прервать цикл, если t равно 10
+
+                    Console.Write(t + " ");
+
+                    t++;
+                }
+                Console.WriteLine("\n");
+            }
+            Console.WriteLine(" Циклы завершены");
             Console.ReadLine();
             Console.Clear();
             Console.Beep();
