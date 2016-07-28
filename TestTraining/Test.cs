@@ -529,7 +529,7 @@ namespace Example
 }
 */
 // Вычислить целые степени числа 2.
-
+/*
 using System;
 
 namespace Test
@@ -556,6 +556,42 @@ namespace Test
                 Console.WriteLine(" 2 в степени " + i + " = " + result + "\n");
             }
             Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Отобразить цифры целого числа в обратном порядке.
+
+using System;
+
+namespace Test
+{
+    class DoWhileDemo
+    {
+        static void Main()
+        {
+            int num;
+            int nextdigit;
+
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+
+            num = 198;
+            Console.WriteLine(" Число = " + num + "\n");
+            Console.WriteLine(" Число в обратном порядке " + num + "\n");
+
+            do
+            {
+                nextdigit = num % 10;
+                Console.Write(nextdigit);
+
+                num = num / 10;
+            }
+            while (num > 0);
+
+            Console.WriteLine();
             Console.ReadLine();
             Console.Clear();
             Console.Beep();
