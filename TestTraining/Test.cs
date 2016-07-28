@@ -629,7 +629,7 @@ namespace Test
 }
 */
 // Применить оператор break для выхода из цикла do-while.
-
+/*
 using System;
 
 namespace Test
@@ -653,6 +653,38 @@ namespace Test
             }
             while (i <= 10);
 
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Выявить наименьший множитель числа.
+
+using System;
+
+namespace Test
+{
+    class FindSmallestFactor
+    {
+        static void Main()
+        {
+            int factor = 1;
+            int num = -1000;
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            for( int i = 2; i <= num/i; i++)
+            {
+                if(( num / i) == 0)
+                {
+                    factor = i;
+                    break; // прервать цикл, как только будет выявлен наименьший множитель числа
+                }
+            }
+            Console.WriteLine(" Наименьший множитель = " + factor + "\n");
             Console.WriteLine(" Done ");
             Console.ReadLine();
             Console.Clear();
