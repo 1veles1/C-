@@ -564,7 +564,7 @@ namespace Test
 }
 */
 // Отобразить цифры целого числа в обратном порядке.
-
+/*
 using System;
 
 namespace Test
@@ -592,6 +592,35 @@ namespace Test
             while (num > 0);
 
             Console.WriteLine();
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Применить оператор break для выхода из цикла.
+
+using System;
+
+namespace Test
+{
+    class BreakDemo
+    {
+        static void Main()
+        {
+            // Использовать оператор break для выхода из этого цикла.
+
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+
+            for( int i = -10; i <= 0; i++)
+            {
+                if (i > 0)
+                break; // завершить цикл, как только значение переменной i станет положительным 
+
+                Console.Write(i + " ");
+            }
+            Console.WriteLine(" Done ");
             Console.ReadLine();
             Console.Clear();
             Console.Beep();
