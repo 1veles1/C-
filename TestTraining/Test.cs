@@ -694,7 +694,7 @@ namespace Test
 }
 */
 // Применить оператор break во вложенных циклах.
-
+/*
 using System;
 
 namespace Test
@@ -723,6 +723,78 @@ namespace Test
                 Console.WriteLine("\n");
             }
             Console.WriteLine(" Циклы завершены");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
+*/
+// Применить оператор continue.
+/*
+using System;
+
+namespace Test
+{
+    class ContDemo
+    {
+        static void Main()
+        {
+            // вывести четные числа от 0 до 100.
+
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+
+            for (int i = 0; i <= 100; i++)
+            {
+                if ((i % 2) != 0)
+                    continue; // перейти к следующему шагу итерации
+                Console.WriteLine(i);
+
+            }
+            Console.WriteLine();
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+ }
+*/
+// Применить оператор goto в операторе switch.
+
+using System;
+
+namespace Test
+{
+    class SwitchGoto
+    {
+        static void Main()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+
+            for (int i = 1; i < 5; i++)
+            {
+                switch (i)
+                {
+                    case 1:
+                        Console.WriteLine(" В ветви case 1" + "\n");
+                        goto case 3;
+                    case 2:
+                        Console.WriteLine(" В ветви case 2" + "\n");
+                        goto case 1;
+                    case 3:
+                        Console.WriteLine(" В ветви case 3" + "\n");
+                        goto default;
+                    default:
+                        Console.WriteLine(" В ветви default" + "\n");
+                        break;
+                }
+                Console.WriteLine();
+            }
+            
+            // goto case 1; // Ошибка! Безусловный переход к оператору switch недопустим.
+
+            Console.WriteLine(" Done ");
             Console.ReadLine();
             Console.Clear();
             Console.Beep();
