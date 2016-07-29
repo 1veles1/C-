@@ -868,7 +868,7 @@ namespace Test
  }
 */
 // В этой программе создаются два объекта типа Building.
-
+/*
 using System;
 
 namespace Test
@@ -925,5 +925,67 @@ namespace Test
         }
     }
 }
+*/
+// Добавить метод в класс Building.
 
+using System;
+
+namespace Test
+{
+    class Building
+    {
+        public int Floors; // количество этажей
+        public int Area; // общая площадь здания
+        public int Occupants; // // количество жильцов
+
+        // Вывести площадь на одного человека,
+
+        public void AreaPerPerson()
+        {
+            Console.WriteLine("\n" + Area / Occupants + " приходится на одного человека ");
+        }
+    
+    }
+        // Использовать метод AreaPerPerson()
+
+    class BuldingDemo
+    {
+        static void Main()
+        {
+            Building house = new Building();
+            Building office = new Building();
+
+            // Присвоить значения полям в объекте house.
+
+            house.Occupants = 4;
+            house.Area = 2500;
+            house.Floors = 2;
+
+            // Присвоить значения полям в объекте office.
+
+            office.Occupants = 25;
+            office.Area = 4200;
+            office.Floors = 3;
+
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine(" Дом имеет = " + house.Floors + " этажа " + house.Occupants + " жильца " + house.Area + 
+                                "кв.  футов общей площади, из них ");
+            house.AreaPerPerson();
+
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine(" Учреждение имеет = " + office.Floors + " этажа " + office.Occupants + 
+                                " работников " + office.Area + " кв. футов общей площади, из них ");
+            office.AreaPerPerson();
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+}
 
