@@ -1,5 +1,4 @@
-﻿
-// Определить наименьший множитель заданного целого значения, состоящий из одной цифры.
+﻿// Определить наименьший множитель заданного целого значения, состоящий из одной цифры.
 /*
 using System;
 
@@ -38,7 +37,6 @@ namespace Test
     }
 }
 */
-
 // Продемонстрировать применение оператора switch.
 /*
 using System;
@@ -83,7 +81,6 @@ namespace Test
     }
 }
 */
-
 // Использовать элементы типа char для управления оператором switch.
 /*
 using System;
@@ -124,7 +121,6 @@ namespace Test
     }
 }
 */
-
 // Пример "проваливания" пустых ветвей case.
 /*
 using System;
@@ -159,7 +155,6 @@ namespace Test
     }
 }
 */
-
 //  Выполнение цикла for в отрицательном направлении.
 /*
 using System;
@@ -192,7 +187,6 @@ namespace Test
     }
 }
 */
-
 // Выяснить, является ли число простым. Если оно непростое, вывести наибольший его множитель.
 /*
 using System;
@@ -243,7 +237,6 @@ namespace Test
       }
   }
 */
-
 // Использовать запятые в операторе цикла for
 /*
 using System;
@@ -271,7 +264,6 @@ namespace Test
     }
 }
 */
-
 // Использовать запятые в операторе цикла for для выявления наименьшего и наибольшего множителя числа.
 /*
 using System;
@@ -310,7 +302,6 @@ namespace Test
     }
 }
 */
-
 // Условием выполнения цикла может служить любое выражение типа bool.
 /*
 using System;
@@ -340,7 +331,6 @@ namespace Test
     }
 }
 */
-
 // Отдельные части цикла for могут оставаться пустыми.
 /*
 using System;
@@ -369,7 +359,6 @@ namespace Test
 }
 
 */
-
 // Исключить еще одну часть из определения цикла for.
 /*
 using System;
@@ -398,7 +387,6 @@ namespace Test
     }
 }
 */
-
 // Тело цикла может быть пустым.
 /*
 using System;
@@ -428,7 +416,6 @@ namespace Test
     }
 }
 */
-
 // Объявить переменную управления циклом в самом цикле for.
 /*
 using System;
@@ -803,7 +790,7 @@ namespace Test
 }
 */
 // Продемонстрировать практическое применение оператора goto.
-
+/*
 using System;
 
 namespace Test
@@ -836,3 +823,48 @@ namespace Test
         }
     }
 }
+*/
+// Программа, в которой используется класс Building.
+
+using System;
+
+namespace Test
+{
+    class Building
+    {
+        public int Floors; // Количество этажей
+        public int Area;   // Площадь здания 
+        public int Occupants; // Количество жильцов
+    }
+        // В этом классе объявляется объект типа Building.
+
+        class BuildingDemo
+    {
+        static void Main()
+        {
+            Building house = new Building(); // создать объект типа Building
+            int areaS; // площадь на одного человека
+
+            // Присвоить значения полям в объекте house.
+
+            house.Occupants = 4;
+            house.Area = 2500;
+            house.Floors = 2;
+
+            // Вычислить площадь на одного человека.
+
+            areaS = house.Area / house.Occupants;
+
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine(" Дом имеет = \n " + house.Floors + " этажа \n " + house.Occupants + " жильца \n " + house.Area + 
+                                " кв. футов общей площади, из них \n " +  areaS + " приходится на одного человека");
+            Console.WriteLine();
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+        }
+    }
+ }
+
+
