@@ -1183,9 +1183,8 @@ namespace Test
     }
 }
 */
-// Добавить параметризированный метод, вычисляющий максимальное количество человек, которые могут
-// занимать здание, исходя из заданной минимальной площади на одного человека.
-
+// Добавить параметризированный метод, вычисляющий максимальное количество человек, которые могут занимать здание, исходя из заданной минимальной площади на одного человека.
+/*
 using System;
 
 namespace Test
@@ -1246,3 +1245,58 @@ namespace Test
         }
     }
 }
+*/
+// Простой конструктор.
+/*
+using System;
+
+namespace Test
+{
+    class MyClass
+    {
+        public int x;
+
+        public MyClass()
+        {
+            x = 10;
+        }
+    }
+    class ConsDemo
+    {
+        static void Main()
+        {
+            MyClass t1 = new MyClass();
+            MyClass t2 = new MyClass();
+
+            Console.WriteLine(t1.x + " " + t2.x);
+        }
+    }
+}
+*/
+// Параметризированный конструктор.
+
+using System;
+
+namespace Test
+{
+    class MyClass
+    {
+        public UInt16 x;
+        
+        public MyClass(UInt16 i)
+        {
+            x = i;
+        }
+    }
+    class ParmConsDemo
+    {
+        static void Main()
+        {
+            MyClass t1 = new MyClass(10);
+            MyClass t2 = new MyClass(88);
+
+            Console.WriteLine(t1.x + " " + t2.x);
+        }
+    }
+}
+
