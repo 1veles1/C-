@@ -1301,7 +1301,7 @@ namespace Test
 }
 */
 // Добавить конструктор в класс Building.
-
+/*
 using System;
 
 class Building
@@ -1349,3 +1349,4 @@ class BuildingDemo
         office.MaxOccupant(300));
     }
 }
+*/
