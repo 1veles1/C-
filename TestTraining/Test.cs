@@ -1350,3 +1350,14 @@ class BuildingDemo
     }
 }
 */
+// Использовать оператор new вместе с типом значения.
+
+using System;
+class newValue
+{
+    static void Main()
+    {
+        int i = new int(); // инициализировать переменную i нулевым значением
+        Console.WriteLine("Значение переменной i равно: " + i);
+    }
+}
