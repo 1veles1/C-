@@ -1351,7 +1351,7 @@ class BuildingDemo
 }
 */
 // Использовать оператор new вместе с типом значения.
-
+/*
 using System;
 class newValue
 {
@@ -1359,5 +1359,57 @@ class newValue
     {
         int i = new int(); // инициализировать переменную i нулевым значением
         Console.WriteLine("Значение переменной i равно: " + i);
+    }
+}
+*/
+// Продемонстрировать применение деструктора.
+
+using System;
+
+namespace Test {
+    
+    class Destruct {
+        
+        public int x;
+
+        public Destruct(int i) {
+            x = i;
+        }
+        
+        // Вызывается при утилизации объекта.
+
+        ~Destruct() {
+            Console.WriteLine(" Уничтожить " + x);
+        }
+        
+        // Создает объект и тут же уничтожает его
+
+        public void Generator(int i) {
+            Destruct o = new Destruct(i);
+        }
+    }
+    class DestructDemo {
+        
+            static void Main() {
+            int count;
+            
+            Destruct ob = new Destruct(0);
+
+            /* А теперь создать большое число объектов.
+            В какой-то момент произойдет "сборка мусора".
+            Примечание: для того чтобы активизировать
+            "сборку мусора", возможно, придется увеличить
+            число создаваемых объектов. */
+
+            for (count = 1; count < 100000; count++)
+                ob.Generator(count);
+
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine(" Done ! ");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ReadLine();
+            Console.Beep();
+        }
     }
 }
