@@ -1415,7 +1415,7 @@ namespace Test {
 }
 */
 // this
-
+/*
 using System;
 
 namespace Test {
@@ -1459,4 +1459,39 @@ namespace Test {
         }
         }
 }
+*/
+// приведен весь класс  Rect, написанный с использованием ссыл­ки this.
 
+using System;
+
+namespace Test {
+
+class Rect {
+        public Int32 Width;
+        public Int32 Height;
+
+        public Rect(Int32 w, Int32 h) {
+            this.Width = w;
+            this.Height = h;
+        }
+        public Int32 Area() {
+            return this.Width * this.Height;
+        }
+}
+class UseRect {
+static void Main() {
+            Rect r1 = new Rect(4, 5);
+            Rect r2 = new Rect(7, 9);
+
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine(" Площадь прямоугольника r1 = " + r1.Area() + "\n");
+            Console.WriteLine(" Площадь прямоугольника r2 =  " + r2.Area() + "\n");
+            
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine();
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Beep();
+        }
+}
+}
