@@ -1363,7 +1363,7 @@ class newValue
 }
 */
 // Продемонстрировать применение деструктора.
-
+/*
 using System;
 
 namespace Test {
@@ -1395,11 +1395,11 @@ namespace Test {
             
             Destruct ob = new Destruct(0);
 
-            /* А теперь создать большое число объектов.
-            В какой-то момент произойдет "сборка мусора".
-            Примечание: для того чтобы активизировать
-            "сборку мусора", возможно, придется увеличить
-            число создаваемых объектов. */
+            // А теперь создать большое число объектов.
+            // В какой-то момент произойдет "сборка мусора".
+            // Примечание: для того чтобы активизировать
+            // "сборку мусора", возможно, придется увеличить
+            // число создаваемых объектов. 
 
             for (count = 1; count < 100000; count++)
                 ob.Generator(count);
@@ -1413,3 +1413,50 @@ namespace Test {
         }
     }
 }
+*/
+// this
+
+using System;
+
+namespace Test {
+    class Rect {
+        public Int32 Width;
+        public Int32 Height;
+
+        public Rect(Int32 w, Int32 h) {
+
+            this.Width = w;
+            this.Height = h;
+        }
+        public Int32 Area() {
+                     
+            // return Weight * Height;
+            
+            return this.Width * this.Height;
+        }
+        }
+    class UseRect {
+    static void Main() {
+            
+            Rect r1 = new Rect(4, 5);
+            Rect r2 = new Rect(7, 9);
+            Rect r3 = new Rect(245, 345);
+
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine(" Площадь прямоугольника r1 = " + r1.Area() + "\n");
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine(" Площадь прямоугольника r2 = " + r2.Area() +"\n");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine(" Площадь прямоугольника r3 =" + r3.Area() + "\n");
+            
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine();
+            Console.WriteLine(" Done ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Beep();
+
+        }
+        }
+}
+
