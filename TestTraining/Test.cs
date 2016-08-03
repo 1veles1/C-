@@ -1516,7 +1516,7 @@ static void Main() {
 }
 */
 // Вычислить среднее арифметическое ряда значений.
-
+/*
 using System;
 
 namespace Test {
@@ -1546,7 +1546,34 @@ static void Main() {
             
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(" Done ! ");
-            Console.ReadLine();            ;
+            Console.ReadLine();            
+            Console.Beep();
+        }
+}
+}
+*/
+// Вычислить среднее арифметическое ряда значений.
+
+using System;
+
+namespace Test {
+class Average {
+static void Main() {
+            Int32[] nums = { 99, 10, 100, 18, 78, 23, 63, 9, 87, 49 };
+            Int32 avg = 0;
+
+            for (Int32 i = 0; i < 10; i++)
+                avg = avg + nums[i];
+            avg = avg / 10;
+
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine(" Среднее арифметическое = " + avg);
+            Console.WriteLine(new string('-', 28));
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" Done ! ");
+            Console.WriteLine(new string('-', 28));
+            Console.ReadLine();
             Console.Beep();
         }
 }
