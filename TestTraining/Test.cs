@@ -1759,7 +1759,7 @@ static void Main() {
 }
 */
 // Присваивание ссылок на массивы.
-
+/*
 using System;
 
 namespace Test {
@@ -1821,3 +1821,46 @@ static void Main() {
         }
 }
 }
+*/
+// Использовать свойство Length массива.
+
+using System;
+
+namespace Test {
+class LenghtDemo {
+static void Main() {
+            Int32[] nums = new Int32[10];
+            
+            Console.ForegroundColor = ConsoleColor.DarkBlue;            
+            Console.WriteLine(new string('*', 24) + "\n");
+            Console.WriteLine(" Длина массива nums = " + nums.Length);
+            Console.WriteLine();
+            Console.WriteLine(new string('*', 24) + "\n");
+
+            // Использовать свойство Length для инициализации массива nums.
+
+            for (Int32 i = 0; i < nums.Length; i++)
+                nums[i] = i * i;
+
+            // А теперь воспользоваться свойством Length для вывода содержимого массива nums.
+            
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine(new string('*', 62) + "\n");
+            Console.Write(" Содержимое массива nums = ");
+            
+            for (Int32 i = 0; i < nums.Length; i++)
+                  
+            Console.Write(" " + nums[i] + " ");
+            Console.WriteLine("\n");
+            Console.WriteLine(new string('*', 62) + "\n");
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(new string('*', 7) + "\n");
+            Console.WriteLine(" Done ! " + "\n");
+            Console.WriteLine(new string('*', 7));
+            Console.ReadLine();
+            Console.Beep();
+        }
+    }
+}
+
