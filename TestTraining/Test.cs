@@ -1598,7 +1598,7 @@ class ArrayErr
 */
 
 // Продемонстрировать двумерный массив.
-
+/*
 using System;
 
 namespace Test {
@@ -1623,4 +1623,76 @@ static void Main() {
             Console.Beep();
         }
 }
+}
+*/
+// Суммировать значения по одной из диагоналей матрицы 3×3×3.
+/*
+using System;
+
+namespace Test {
+class ThreeDMatrix {
+static void Main() {
+            Int32[,,] m = new Int32[3, 3, 3];
+            Int32 sum_d1 = 0;
+            Int32 sum_d2 = 0;
+            Int32 n = 1;
+
+            for (Int32 x = 0; x < 3; x++)
+                for (Int32 y = 0; y < 3; y++)
+                    for (Int32 z = 0; z < 3; z++)
+                        m[x, y, z] = n++;
+            sum_d1 = m[0, 0, 0] + m[1, 1, 1] + m[2, 2, 2];
+            sum_d2 = m[2, 2, 0] + m[1, 1, 1] + m[0, 2, 2];
+
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine(" Сумма значений по первой диагонали = " + sum_d1 + "\n");
+            Console.WriteLine(new string('-', 40));
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine(" Сумма значений по второй диагонали = " + sum_d2 + "\n");
+            Console.WriteLine(new string('-', 40));
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" Done ! ");
+            Console.WriteLine(new string('-', 40));
+            Console.ReadLine();
+            Console.Beep();
+        }
+}
+}
+*/
+// Инициализировать двумерный массив.
+
+using System;
+
+namespace Test
+{
+
+    class Squares
+    {
+        static void Main()
+        {
+            int[,] sqrs = {
+                        { 1, 1 },
+                        { 2, 4 },
+                        { 3, 9 },
+                        { 4, 16 },
+                        { 5, 25 },
+                        { 6, 36 },
+                        { 7, 49 },
+                        { 8, 64 },
+                        { 9, 81 },
+                        { 10, 100 }
+                        };
+            int i, j;
+
+            for (i = 0; i < 10; i++)
+            {
+                for (j = 0; j < 2; j++)
+
+                    Console.Write(sqrs[i, j] + " ");
+                Console.WriteLine();
+            }
+        }
+    }
 }
