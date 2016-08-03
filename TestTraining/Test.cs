@@ -1662,7 +1662,7 @@ static void Main() {
 }
 */
 // Инициализировать двумерный массив.
-
+/*
 using System;
 
 namespace Test
@@ -1696,3 +1696,66 @@ namespace Test
         }
     }
 }
+*/
+// Продемонстрировать применение ступенчатых массивов.
+
+using System;
+
+namespace Test {
+class Jadded {
+static void Main() {
+            Int32[][] jagged = new Int32[3][];
+            jagged[0] = new Int32[4];
+            jagged[1] = new Int32[3];
+            jagged[2] = new Int32[5];
+
+            Int32 i;
+
+            // Сохранить значения в первом массиве.
+
+            for (i = 0; i < 4; i++)
+                jagged[0][i] = i;
+
+            // Сохранить значения во втором массиве.
+
+            for (i = 0; i < 3; i++)
+                jagged[1][i] = i;
+
+            // Сохранить значения в третьем массиве.
+
+            for (i = 0; i < 5; i++)
+                jagged[2][i] = i;
+
+            // Вывести значения из первого массива.
+
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            for (i = 0; i < 4; i++)
+                Console.Write(" " + jagged[0][i] + " ");
+            Console.WriteLine();
+            Console.WriteLine(new string ('*', 15) + "\n");
+
+            // Вывести значения из второго массива.
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            for (i = 0; i < 3; i++)
+                Console.Write(" " + jagged[1][i] + " ");
+            Console.WriteLine();
+            Console.WriteLine(new string ('*', 15) + "\n");
+
+            // Вывести значения из третьего массива.
+            
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            for (i = 0; i < 5; i++)
+                Console.Write(" " + jagged[2][i] + " ");
+            Console.WriteLine();
+            Console.WriteLine(new string('*', 15) + "\n");
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" Done ! " + "\n");
+            Console.WriteLine(new string('*', 15));
+            Console.ReadLine();
+            Console.Beep();
+        }
+    }
+}
+
