@@ -1823,7 +1823,7 @@ static void Main() {
 }
 */
 // Использовать свойство Length массива.
-
+/*
 using System;
 
 namespace Test {
@@ -1863,4 +1863,65 @@ static void Main() {
         }
     }
 }
+*/
+// Прямоугольник в консоли
+/*
+using System;
+using System.Collections.Generic;
+using System.Text;
 
+namespace Equation
+{
+    class Program
+    {
+        const char DBL_VLINE = '║';
+        const char DBL_HLINE = '═';
+        const char DBL_LUCORNER = '╔';
+        const char DBL_LDCORNER = '╚';
+        const char DBL_RUCORNER = '╗';
+        const char DBL_RDCORNER = '╝';
+
+        static void Main(string[] args)
+        {
+            int width = 50, height = 20;
+            int sx = (Console.WindowWidth - width) / 2;
+            int sh = (Console.WindowHeight - height) / 2;
+
+            Console.CursorTop = sh; Console.CursorLeft = sx;
+            Console.Write(DBL_LUCORNER);
+            Console.CursorTop = sh; Console.CursorLeft = sx + width - 1;
+            Console.Write(DBL_RUCORNER);
+            Console.CursorTop = sh + height - 1; Console.CursorLeft = sx;
+            Console.Write(DBL_LDCORNER);
+            Console.CursorTop = sh + height - 1; Console.CursorLeft = sx + width - 1;
+            Console.Write(DBL_RDCORNER);
+
+            // Draw horizontal lines.
+            for (int i = 0; i < width - 2; i++)
+            {
+                Console.CursorTop = sh;
+                Console.CursorLeft = sx + 1 + i;
+                Console.Write(DBL_HLINE);
+
+                Console.CursorTop = sh + height - 1;
+                Console.CursorLeft = sx + 1 + i;
+                Console.Write(DBL_HLINE);
+            }
+
+            // Draw vertical lines.
+            for (int i = 0; i < height - 2; i++)
+            {
+                Console.CursorTop = sh + 1 + i;
+                Console.CursorLeft = sx;
+                Console.Write(DBL_VLINE);
+
+                Console.CursorTop = sh + 1 + i;
+                Console.CursorLeft = sx + width - 1;
+                Console.Write(DBL_VLINE);
+            }
+
+            Console.WriteLine("\n\n\n");
+        }
+    }
+}
+*/
