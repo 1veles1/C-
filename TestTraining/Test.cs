@@ -1596,7 +1596,6 @@ class ArrayErr
     }
 }
 */
-
 // Продемонстрировать двумерный массив.
 /*
 using System;
@@ -1698,7 +1697,7 @@ namespace Test
 }
 */
 // Продемонстрировать применение ступенчатых массивов.
-
+/*
 using System;
 
 namespace Test {
@@ -1758,4 +1757,67 @@ static void Main() {
         }
     }
 }
+*/
+// Присваивание ссылок на массивы.
 
+using System;
+
+namespace Test {
+class AssignARef {
+static void Main() {
+
+            Int32 i;
+
+            int[] nums1 = new int[10];
+            int[] nums2 = new int[10];
+            
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            for (i = 0; i < 10; i++) nums1[i] = i;
+            for (i = 0; i < 10; i++) nums2[i] = -i;
+                        
+            Console.Write(" Содержимое массива nums1 = ");
+            Console.WriteLine();
+            
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            
+            for (i = 0; i < 10; i++)
+                            
+            Console.Write(nums1[i] + " ");
+            Console.WriteLine();
+            
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            
+            Console.Write(" Содержимое массива nums2 = ");
+
+            for (i = 0; i < 10; i++)
+                      
+            Console.Write(nums2[i] + " ");
+            Console.WriteLine();
+            
+            nums2 = nums1; // теперь nums2 ссылается на nums1
+            
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            
+            Console.Write(" Содержимое массива nums2 после присваивания = ");
+            
+            for (i = 0; i < 10; i++)
+            
+            Console.Write(nums2[i] + " ");
+            Console.WriteLine();
+            
+            // Далее оперировать массивом nums1 посредством
+            // переменной ссылки на массив nums2.
+            
+            nums2[3] = 99;
+            
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            
+            Console.Write(" Содержимое массива nums1 после изменения посредством переменной nums2 = ");
+            for (i = 0; i < 10; i++)
+            
+            Console.Write(nums1[i] + " ");
+            Console.WriteLine();
+        }
+}
+}
