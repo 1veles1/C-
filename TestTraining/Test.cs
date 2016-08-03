@@ -1553,7 +1553,7 @@ static void Main() {
 }
 */
 // Вычислить среднее арифметическое ряда значений.
-
+/*
 using System;
 
 namespace Test {
@@ -1578,3 +1578,21 @@ static void Main() {
         }
 }
 }
+*/
+// Продемонстрировать превышение границ массива.
+
+using System;
+class ArrayErr
+{
+    static void Main()
+    {
+        int[] sample = new int[10];
+        int i;
+        
+        // Воссоздать превышение границ массива.
+        
+        for (i = 0; i < 100; i = i + 1)
+            sample[i] = i;
+    }
+}
+
