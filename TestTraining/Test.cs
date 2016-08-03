@@ -1925,3 +1925,26 @@ namespace Equation
     }
 }
 */
+// Использовать свойство Length трехмерного массива.
+
+using System;
+
+namespace Test {
+class LenghtDemo3D {
+static void Main() {
+            Int32[,,] nums = new Int32[10, 5, 6];
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine(new string('*', 25));
+            Console.WriteLine(" Длина массива nums = " + nums.Length);
+            Console.WriteLine(new string('*', 25) + "\n");
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(new string('*', 7));
+            Console.WriteLine(" Done ! ");
+            Console.WriteLine(new string('*', 7));
+            Console.ReadLine();
+            Console.Beep();
+        }
+}
+}
+
