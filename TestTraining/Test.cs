@@ -1461,7 +1461,7 @@ namespace Test {
 }
 */
 // приведен весь класс  Rect, написанный с использованием ссыл­ки this.
-
+/*
 using System;
 
 namespace Test {
@@ -1491,6 +1491,62 @@ static void Main() {
             Console.WriteLine();
             Console.WriteLine(" Done ");
             Console.ReadLine();
+            Console.Beep();
+        }
+}
+}
+*/
+// Продемонстрировать одномерный массив.
+/*
+using System;
+
+namespace Test
+{
+class ArrayDemmo {
+static void Main() {
+            Int32[] sample = new Int32[10];
+            Int32 i;
+
+            for (i = 0; i < 10; i++)
+                sample[i] = i;
+            for (i = 0; i < 10; i++)
+                Console.WriteLine(" sample [ " + i + " ] = " + sample[i]);
+}
+}
+}
+*/
+// Вычислить среднее арифметическое ряда значений.
+
+using System;
+
+namespace Test {
+class Average {
+static void Main() {
+            Int32[] nums = new Int32[10];
+            Int32 avg = 0;
+
+            nums[0] = 99;
+            nums[1] = 10;
+            nums[2] = 100;
+            nums[3] = 18;
+            nums[4] = 78;
+            nums[5] = 23;
+            nums[6] = 63;
+            nums[7] = 9;
+            nums[8] = 87;
+            nums[9] = 49;
+
+            for (int i = 0; i < 10; i++)
+                avg = avg + nums[i];
+            avg = avg / 10;
+
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine(" Среднее арифметическое = " + avg);
+            Console.WriteLine(new string('-', 28));
+            
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" Done ! ");
+            Console.ReadLine();            ;
             Console.Beep();
         }
 }
