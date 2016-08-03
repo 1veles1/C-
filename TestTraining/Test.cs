@@ -1580,7 +1580,7 @@ static void Main() {
 }
 */
 // Продемонстрировать превышение границ массива.
-
+/*
 using System;
 class ArrayErr
 {
@@ -1595,4 +1595,32 @@ class ArrayErr
             sample[i] = i;
     }
 }
+*/
 
+// Продемонстрировать двумерный массив.
+
+using System;
+
+namespace Test {
+class Twod {
+static void Main() {
+            Int32 t, i;
+            Int32[,] table = new Int32[3, 4];
+
+            for(t = 0; t < 3; ++t) {
+            for(i = 0; i < 4; ++i) {
+                    table[t, i] = (t * 4) + i + 1;
+                    
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
+                    Console.Write(table[t, i] + "\n");                  
+                }
+                }
+            Console.WriteLine(new string('-', 28));
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" Done ! ");
+            Console.WriteLine(new string('-', 28));
+            Console.ReadLine();
+            Console.Beep();
+        }
+}
+}
