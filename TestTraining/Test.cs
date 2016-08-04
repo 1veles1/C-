@@ -2366,7 +2366,7 @@ namespace Test
 	}
 */
 // Вывести отдельные цифры целого числа словами.
-
+/*
 using System;
 
 namespace Test
@@ -2410,4 +2410,25 @@ namespace Test
 			}
 		}
 	}
+*/
+// Применить метод Substring().
 
+using System;
+
+namespace Test
+	{
+	class SubStr
+		{
+		static void Main()
+			{
+			string orgstr = " В C# упрощается обращение со строками ";
+
+			// сформировать подстроку
+
+			string substr = orgstr.Substring(5, 20);
+
+			Console.WriteLine("orgstr = " + orgstr);
+			Console.WriteLine("substr = " + substr);
+			}
+		}
+	}
