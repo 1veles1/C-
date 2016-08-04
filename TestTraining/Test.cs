@@ -2249,9 +2249,8 @@ namespace Test
 		}
 	}
 */
-
 // Некоторые операции со строками.
-
+/*
 using System;
 using System.Globalization;
 
@@ -2324,7 +2323,46 @@ namespace Test
 
 			idx = str2.LastIndexOf("Один", StringComparison.Ordinal);
 			Console.WriteLine("Индекс последнего вхождения подстроки <Один> = " + idx);
+
+			Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(new string('*', 7));
+            Console.WriteLine(" Done ! ");
+            Console.WriteLine(new string('*', 7));
+            Console.ReadLine();
+            Console.Beep();
 			}
 		}
 	}
+*/
+// Продемонстрировать массивы строк.
+
+using System;
+
+namespace Test
+	{
+	class StringArrays
+		{
+		static void Main()
+			{
+			string[] str = { "This", "is", "very", "plain", "test" };
+
+			Console.WriteLine("Source array");
+
+			for(Int32 i = 0; i < str.Length; i++)
+				Console.Write(str[i] + " ");
+			Console.WriteLine();
+
+			// Change row
+
+			str[1] = "too";
+			str[2] = "to limit the test";
+
+			Console.WriteLine("Modified array = ");
+			for(Int32 i = 0; i < str.Length; i++)
+				Console.Write(str[i] + " ");
+			
+			}
+		}
+	}
+
 
