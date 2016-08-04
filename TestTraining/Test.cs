@@ -1926,7 +1926,7 @@ namespace Equation
 }
 */
 // Использовать свойство Length трехмерного массива.
-
+/*
 using System;
 
 namespace Test {
@@ -1945,6 +1945,74 @@ static void Main() {
             Console.ReadLine();
             Console.Beep();
         }
+	}
 }
-}
+*/
+// Поменять местами содержимое элементов массива.
 
+using System;
+
+namespace Test
+	{
+	class RevCopy
+		{
+		static void Main ()
+			{
+			int i, j;
+			int[] nums1 = new int[10];
+			int[] nums2 = new int[10];
+
+			for ( i = 0; i < nums1.Length; i++ ) nums1[i] = i;
+
+			Console.WriteLine();
+
+			Console.ForegroundColor = ConsoleColor.DarkGreen;
+			Console.WriteLine( new string( '*', 50 ) );
+
+			Console.ForegroundColor = ConsoleColor.DarkYellow;
+
+			Console.Write( " Исходное содержимое массива = " );
+
+			for ( i = 0; i < nums2.Length; i++ )
+				Console.Write( nums1[i] + " " );
+			Console.WriteLine();
+
+			Console.ForegroundColor = ConsoleColor.DarkGreen;
+			Console.WriteLine( new string( '*', 50 ) );
+			Console.WriteLine();
+
+			// Скопировать элементы массива nums1 в массив nums2 в обратном порядке.
+
+			Console.ForegroundColor = ConsoleColor.DarkGreen;
+			Console.WriteLine( new string( '*', 60 ) );
+
+			Console.ForegroundColor = ConsoleColor.DarkYellow;
+
+			if ( nums2.Length >= nums1.Length ) // проверить, достаточно ли длины массива nums2
+				for ( i = 0, j = nums1.Length - 1; i < nums1.Length; i++, j-- )
+					nums2[j] = nums1[i];
+
+			Console.Write( " Содержимое массива в обратном порядке = " );
+
+			for ( i = 0; i < nums2.Length; i++ )
+				Console.Write( nums2[i] + " " );
+			Console.WriteLine();
+
+			Console.ForegroundColor = ConsoleColor.DarkGreen;
+			Console.WriteLine( new string( '*', 60 ) );
+			Console.WriteLine();
+
+			Console.ForegroundColor = ConsoleColor.DarkRed;
+			Console.WriteLine( new string( '*', 7 ) );
+
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.WriteLine( " Done ! " );
+
+			Console.ForegroundColor = ConsoleColor.DarkRed;
+			Console.WriteLine( new string( '*', 7 ) );
+
+			Console.ReadLine();
+			Console.Beep();
+			}
+		}
+	}
