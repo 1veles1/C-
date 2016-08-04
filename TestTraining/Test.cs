@@ -2121,6 +2121,7 @@ namespace Test
 	}
 */
 // Использовать оператор цикла foreach для обращения к двумерному массиву.
+/*
 using System;
 
 namespace Test
@@ -2161,16 +2162,67 @@ namespace Test
 			Console.WriteLine(" Сумма равна = " + sum );			
 
 			Console.ForegroundColor = ConsoleColor.DarkGray;
-			Console.WriteLine( new string( '*', 17 ) );
+			Console.WriteLine( new string( '*', 17 ));
 			Console.WriteLine();
 
 			Console.ForegroundColor = ConsoleColor.Red;
-			Console.WriteLine( new string( '*', 7 ) );
+			Console.WriteLine( new string( '*', 7 ));
 			Console.WriteLine( " Done ! " );
-			Console.WriteLine( new string( '*', 7 ) );
+			Console.WriteLine( new string( '*', 7 ));
 			Console.ReadLine();
 			Console.Beep();
 			}
 		}
 	}
+*/
+// Поиск в массиве с помощью оператора цикла foreach.
 
+using System;
+
+namespace Test
+	{
+	class Search
+		{
+		static void Main()
+			{
+			Int32[] nums = new Int32[10];
+			Int32 val;
+			Boolean found = false;
+
+			// Задать первоначальные значения элементов массива nums.
+
+			for(Int32 i = 0; i < 10; i++)
+				nums[i] = i;
+			val = 5;
+
+			// Использовать цикл foreach для поиска заданного
+			// значения в массиве nums.
+
+			Console.ForegroundColor = ConsoleColor.DarkGray;
+			Console.WriteLine(new string('*', 19));
+
+			foreach(Int32 x in nums)
+				{
+				if(x == val)
+					found = true;
+					break;
+				}
+			if(found)
+
+			Console.ForegroundColor = ConsoleColor.Gray;
+			Console.WriteLine(" Значение найдено ! ");
+
+			Console.ForegroundColor = ConsoleColor.DarkGray;
+			Console.WriteLine(new string('*', 19));
+			Console.WriteLine();
+
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.WriteLine(new string('*', 7));
+			Console.WriteLine(" Done ! ");
+			Console.WriteLine(new string('*', 7));
+			Console.ReadLine();
+			Console.Beep();
+			}
+		}
+		
+	}
