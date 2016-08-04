@@ -2018,7 +2018,7 @@ namespace Test
 	}
 */
 // Продемонстрировать применение свойства Length при обращении со ступенчатыми массивами.
-
+/*
 using System;
 
 namespace Test
@@ -2053,4 +2053,70 @@ namespace Test
 			}
 		}
 	}
-	
+*/
+// Использовать оператор цикла foreach.
+/*
+using System;
+
+namespace Test
+	{
+	class ForeachDemo
+		{
+		static void Main ()
+			{
+			Int32 sum = 0;
+			
+			Int32[] nums = new Int32[10];
+
+			// Задать первоначальные значения элементов массива nums.
+
+			for ( Int32 i = 0; i < 10; i++ )
+				nums[i] = i;
+			
+			// Использовать цикл foreach для вывода значений
+			// элементов массива и подсчета их суммы.
+
+			foreach(Int32 c in nums )
+				{
+				
+				Console.WriteLine(" Значение элемента равно = " + c);
+				sum += c;
+				}
+			Console.WriteLine(" Сумма равна = " + sum );
+			}
+		}
+	} 
+*/
+// Использовать оператор break для преждевременного завершения цикла foreach.
+
+using System;
+
+namespace Test
+	{
+	class ForeachDemo
+		{
+		static void Main ()
+			{
+			Int32 sum = 0;
+			Int32[] nums = new Int32[10];
+
+			// Задать первоначальные значения элементов массива nums.
+
+			for (Int32 i = 0; i < 10; i++ )
+				nums[i] = i;
+
+			// Использовать цикл foreach для вывода значений
+			// элементов массива и подсчета их суммы.
+
+			foreach ( Int32 x in nums )
+				{
+				Console.WriteLine( " Значение элемента равно = " + x );
+				sum += x;
+				if ( x == 4 )
+					break; // прервать цикл, как только индекс массива достигнет 4
+				}
+			Console.WriteLine( " Сумма первых 5 элементов = " + sum );
+			}
+		}
+	}
+
