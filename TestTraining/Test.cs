@@ -2335,7 +2335,7 @@ namespace Test
 	}
 */
 // Продемонстрировать массивы строк.
-
+/*
 using System;
 
 namespace Test
@@ -2364,5 +2364,50 @@ namespace Test
 			}
 		}
 	}
+*/
+// Вывести отдельные цифры целого числа словами.
 
+using System;
+
+namespace Test
+	{
+	class ConvertDigitsToWords
+		{
+		static void Main()
+			{
+			Int32 num;
+			Int32 nextdigit;
+			Int32 numdigits;
+
+			Int32[] n = new Int32[20];
+			String[] digits = { "нуль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять" };
+
+			num = 1908;
+
+			Console.WriteLine(" Число = " + num);
+			Console.Write(" Число словами = ");
+
+			nextdigit = 0;
+			numdigits = 0;
+
+			// Получить отдельные цифры и сохранить их в массиве n.
+
+			do
+				{
+				nextdigit = num % 10;
+				n[numdigits] = nextdigit;
+				numdigits++;
+				num = num / 10;
+				}
+			while(num > 0);
+			numdigits--;
+
+			// Вывести полученные слова.
+
+			for(; numdigits >= 0; numdigits--)
+				Console.Write(digits[n[numdigits]] + " ");
+			Console.WriteLine();
+			}
+		}
+	}
 
