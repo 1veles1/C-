@@ -2088,7 +2088,7 @@ namespace Test
 	} 
 */
 // Использовать оператор break для преждевременного завершения цикла foreach.
-
+/*
 using System;
 
 namespace Test
@@ -2116,6 +2116,60 @@ namespace Test
 					break; // прервать цикл, как только индекс массива достигнет 4
 				}
 			Console.WriteLine( " Сумма первых 5 элементов = " + sum );
+			}
+		}
+	}
+*/
+// Использовать оператор цикла foreach для обращения к двумерному массиву.
+using System;
+
+namespace Test
+	{
+	class ForeachDemo
+		{
+		static void Main ()
+			{
+			Int32 sum = 0;
+			Int32[,] nums = new Int32[3,5];
+
+			// Задать первоначальные значения элементов массива nums.
+
+			for ( Int32 i = 0; i < 3; i++ )
+				for ( Int32 j = 0; j < 5; j++ )
+					nums[i, j] = ( i + 1 ) * ( j + 1 );
+
+			// Использовать цикл foreach для вывода значений
+			// элементов массива и подсчета их суммы.
+
+			Console.ForegroundColor = ConsoleColor.Gray;
+			Console.WriteLine(new string('*', 29));
+
+			foreach (Int32 x in nums )
+				{
+				Console.ForegroundColor = ConsoleColor.DarkGray;
+				Console.WriteLine(" Значение элемента равно = " + x);
+				sum += x;
+				}
+			Console.ForegroundColor = ConsoleColor.Gray;
+			Console.WriteLine( new string( '*', 29));
+			Console.WriteLine();
+
+			Console.ForegroundColor = ConsoleColor.DarkGray;
+			Console.WriteLine(new string('*', 17));
+
+			Console.ForegroundColor = ConsoleColor.Gray;
+			Console.WriteLine(" Сумма равна = " + sum );			
+
+			Console.ForegroundColor = ConsoleColor.DarkGray;
+			Console.WriteLine( new string( '*', 17 ) );
+			Console.WriteLine();
+
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.WriteLine( new string( '*', 7 ) );
+			Console.WriteLine( " Done ! " );
+			Console.WriteLine( new string( '*', 7 ) );
+			Console.ReadLine();
+			Console.Beep();
 			}
 		}
 	}
