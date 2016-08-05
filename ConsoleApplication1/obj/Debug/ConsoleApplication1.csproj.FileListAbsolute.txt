@@ -1,0 +1,1 @@
+H:\C#\TestTraining\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config

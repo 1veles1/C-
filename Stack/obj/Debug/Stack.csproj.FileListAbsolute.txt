@@ -1,0 +1,6 @@
+H:\C#\TestTraining\Stack\bin\Debug\Stack.exe.config
+H:\C#\TestTraining\Stack\obj\Debug\Stack.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\Stack\bin\Debug\Stack.exe
+H:\C#\TestTraining\Stack\bin\Debug\Stack.pdb
+H:\C#\TestTraining\Stack\obj\Debug\Stack.exe
+H:\C#\TestTraining\Stack\obj\Debug\Stack.pdb
