@@ -1,0 +1,6 @@
+H:\C#\TestTraining\Params\bin\Debug\Params.exe.config
+H:\C#\TestTraining\Params\bin\Debug\Params.exe
+H:\C#\TestTraining\Params\bin\Debug\Params.pdb
+H:\C#\TestTraining\Params\obj\Debug\Params.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\Params\obj\Debug\Params.exe
+H:\C#\TestTraining\Params\obj\Debug\Params.pdb
