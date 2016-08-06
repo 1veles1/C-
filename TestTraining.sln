@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseClassFactory", "UseClass
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnArrayFromMethod", "ReturnArrayFromMethod\ReturnArrayFromMethod.csproj", "{2C32E327-597E-4B03-B12D-3C9F48FC9A53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadMethod", "OverloadMethod\OverloadMethod.csproj", "{CA6E110E-7A56-4B76-B3D4-1127A9953381}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{2C32E327-597E-4B03-B12D-3C9F48FC9A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C32E327-597E-4B03-B12D-3C9F48FC9A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C32E327-597E-4B03-B12D-3C9F48FC9A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA6E110E-7A56-4B76-B3D4-1127A9953381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA6E110E-7A56-4B76-B3D4-1127A9953381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA6E110E-7A56-4B76-B3D4-1127A9953381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA6E110E-7A56-4B76-B3D4-1127A9953381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
