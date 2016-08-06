@@ -1,5 +1,5 @@
 ﻿// Пример передачи объектов методам по ссылке.
-
+/*
 using System;
 
 namespace trahsmission
@@ -62,6 +62,83 @@ namespace trahsmission
 				Console.WriteLine("ob1 и ob2 имеют одинаковые значения.");
 			else
 				Console.WriteLine("ob1 и ob2 имеют разные значения.");
+			}
+		}
+	}
+*/
+// Передача аргументов обычных типов по значению.
+/*
+using System;
+
+namespace transmission
+	{
+	class Test
+		{
+
+		// Этот метод не оказывает никакого влияния на
+		// аргументы, используемые для его вызова.
+
+		public void NoChange(Int32 i, Int32 j)
+			{
+			i = i + j;
+			j = -j;
+			}
+		}
+	class CallByValue
+		{
+		static void Main()
+			{
+			Test ob = new Test();
+
+			Int32 a = 15;
+			Int32 b = 20;
+
+			Console.WriteLine(" а и b до вызова = " + a + " " + b);
+
+			ob.NoChange(a, b);
+
+			Console.WriteLine(" а и b после вызова: " + a + " " + b);
+			}
+		}
+	}
+*/
+// Передача объектов по ссылке.
+
+using System;
+
+namespace transmisssion
+	{
+	class Test
+		{
+		public Int32 a, b;
+
+		public Test(Int32 i, Int32 j)
+			{
+			a = i;
+			b = j;
+			}
+
+		// Передать объект.Теперь переменные ob.а и ob.b из объекта,
+		// используемого в вызове метода, будут изменены. 
+
+		public void Change(Test ob)
+			{
+			ob.a = ob.a + ob.b;
+			ob.b = -ob.b;
+			}
+		}
+	class CallByRef
+		{
+		static void Main()
+			{
+			Test ob = new Test(15, 20);
+
+			Console.WriteLine(" ob.а и ob.b до вызова = " + ob.a + " " + ob.b);
+
+			ob.Change(ob);
+
+			Console.WriteLine(" ob.а и ob.b после вызова = " + ob.a + " " + ob.b);
+
 			}
 		}
 	}
