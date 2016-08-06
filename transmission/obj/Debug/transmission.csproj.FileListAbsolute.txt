@@ -1,0 +1,6 @@
+H:\C#\TestTraining\transmission\bin\Debug\transmission.exe.config
+H:\C#\TestTraining\transmission\bin\Debug\transmission.exe
+H:\C#\TestTraining\transmission\bin\Debug\transmission.pdb
+H:\C#\TestTraining\transmission\obj\Debug\transmission.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\transmission\obj\Debug\transmission.exe
+H:\C#\TestTraining\transmission\obj\Debug\transmission.pdb
