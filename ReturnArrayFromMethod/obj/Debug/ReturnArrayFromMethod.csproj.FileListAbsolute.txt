@@ -1,0 +1,6 @@
+H:\C#\TestTraining\ReturnArrayFromMethod\bin\Debug\ReturnArrayFromMethod.exe.config
+H:\C#\TestTraining\ReturnArrayFromMethod\bin\Debug\ReturnArrayFromMethod.exe
+H:\C#\TestTraining\ReturnArrayFromMethod\bin\Debug\ReturnArrayFromMethod.pdb
+H:\C#\TestTraining\ReturnArrayFromMethod\obj\Debug\ReturnArrayFromMethod.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\ReturnArrayFromMethod\obj\Debug\ReturnArrayFromMethod.exe
+H:\C#\TestTraining\ReturnArrayFromMethod\obj\Debug\ReturnArrayFromMethod.pdb

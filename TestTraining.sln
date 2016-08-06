@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnFromMethod", "ReturnF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseClassFactory", "UseClassFactory\UseClassFactory.csproj", "{1ED1557A-EC51-41BB-96BC-941AD03AA2E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnArrayFromMethod", "ReturnArrayFromMethod\ReturnArrayFromMethod.csproj", "{2C32E327-597E-4B03-B12D-3C9F48FC9A53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{1ED1557A-EC51-41BB-96BC-941AD03AA2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ED1557A-EC51-41BB-96BC-941AD03AA2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ED1557A-EC51-41BB-96BC-941AD03AA2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C32E327-597E-4B03-B12D-3C9F48FC9A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C32E327-597E-4B03-B12D-3C9F48FC9A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C32E327-597E-4B03-B12D-3C9F48FC9A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C32E327-597E-4B03-B12D-3C9F48FC9A53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
