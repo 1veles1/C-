@@ -109,7 +109,7 @@ namespace RefOut
 	}
 */
 // Использовать два параметра типа out.
-
+/*
 using System;
 
 namespace RefOut
@@ -173,6 +173,64 @@ namespace RefOut
 				}
 			else
 				Console.WriteLine(" Общий множитель у чисел 35 и 51 отсутствует ");
+			}
+		}
+	}
+*/
+// Поменять местами две ссылки.
+
+using System;
+
+namespace RefOut
+	{
+	class RefSwap
+		{
+		Int32 a, b;
+
+		public RefSwap(Int32 i, Int32 j)
+			{
+			a = i;
+			b = j;
+			}
+		public void Show()
+			{
+			Console.WriteLine(" a = {0}, b = {1} ", a, b);
+			}
+
+		// Этот метод изменяет свои аргументы.
+
+		public void Swap(ref RefSwap ob_1,ref RefSwap ob_2)
+			{
+			RefSwap t;
+			t = ob_1;
+			ob_1 = ob_2;
+			ob_2 = t;
+			}
+		}
+	class RefSwapDemo
+		{
+		static void Main()
+			{
+			RefSwap x = new RefSwap(1, 2);
+			RefSwap y = new RefSwap(3, 4);
+
+			Console.Write("x до вызова = ");
+			x.Show();
+
+			Console.Write(" у до вызова = ");
+			y.Show();
+
+			Console.WriteLine();
+
+			// Смена объектов, на которые ссылаются аргументы х и у
+
+			x.Swap(ref x, ref y);
+
+			Console.Write(" х после вызова = ");
+			x.Show();
+
+			Console.Write(" у после вызова = ");
+			y.Show();
 			}
 		}
 	}
