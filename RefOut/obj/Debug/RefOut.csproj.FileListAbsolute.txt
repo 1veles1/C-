@@ -1,0 +1,6 @@
+H:\C#\TestTraining\RefOut\bin\Debug\RefOut.exe.config
+H:\C#\TestTraining\RefOut\bin\Debug\RefOut.exe
+H:\C#\TestTraining\RefOut\bin\Debug\RefOut.pdb
+H:\C#\TestTraining\RefOut\obj\Debug\RefOut.exe
+H:\C#\TestTraining\RefOut\obj\Debug\RefOut.pdb
+H:\C#\TestTraining\RefOut\obj\Debug\RefOut.csprojResolveAssemblyReference.cache
