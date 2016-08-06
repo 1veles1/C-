@@ -5,17 +5,19 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTraining", "TestTraining\TestTraining.csproj", "{65B22197-EE2F-4AE2-8443-7572C7E66F62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "access modifier", "access modifier\access modifier.csproj", "{EA8C320A-8DB3-4A6B-A246-34D733243135}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifier", "access modifier\AccessModifier.csproj", "{EA8C320A-8DB3-4A6B-A246-34D733243135}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{55F72300-C9F8-4DD6-A172-E80134C9995E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "transmission", "transmission\transmission.csproj", "{02D096C9-7AC4-4AF3-B0FD-C26B95411623}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transmission", "transmission\Transmission.csproj", "{02D096C9-7AC4-4AF3-B0FD-C26B95411623}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefOut", "RefOut\RefOut.csproj", "{DC89E699-F5B8-4370-8A67-8ABE5501633C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Params", "Params\Params.csproj", "{CF4083D2-F880-4603-9DE0-7C6C3062ED3B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnFromMethod", "ReturnFromMethod\ReturnFromMethod.csproj", "{D0D0AA28-E11E-411E-A987-B910E454DD45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseClassFactory", "UseClassFactory\UseClassFactory.csproj", "{1ED1557A-EC51-41BB-96BC-941AD03AA2E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{D0D0AA28-E11E-411E-A987-B910E454DD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0D0AA28-E11E-411E-A987-B910E454DD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0D0AA28-E11E-411E-A987-B910E454DD45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED1557A-EC51-41BB-96BC-941AD03AA2E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED1557A-EC51-41BB-96BC-941AD03AA2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED1557A-EC51-41BB-96BC-941AD03AA2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED1557A-EC51-41BB-96BC-941AD03AA2E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

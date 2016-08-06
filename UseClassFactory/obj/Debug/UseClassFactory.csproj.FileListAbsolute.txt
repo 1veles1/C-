@@ -1,0 +1,5 @@
+H:\C#\TestTraining\UseClassFactory\bin\Debug\UseClassFactory.exe.config
+H:\C#\TestTraining\UseClassFactory\bin\Debug\UseClassFactory.exe
+H:\C#\TestTraining\UseClassFactory\bin\Debug\UseClassFactory.pdb
+H:\C#\TestTraining\UseClassFactory\obj\Debug\UseClassFactory.exe
+H:\C#\TestTraining\UseClassFactory\obj\Debug\UseClassFactory.pdb
