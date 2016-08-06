@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnArrayFromMethod", "Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadMethod", "OverloadMethod\OverloadMethod.csproj", "{CA6E110E-7A56-4B76-B3D4-1127A9953381}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadConstractor", "OverloadConstractor\OverloadConstractor.csproj", "{B3FEDCDF-480D-4251-885E-E580FD1DC762}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{CA6E110E-7A56-4B76-B3D4-1127A9953381}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA6E110E-7A56-4B76-B3D4-1127A9953381}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA6E110E-7A56-4B76-B3D4-1127A9953381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FEDCDF-480D-4251-885E-E580FD1DC762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FEDCDF-480D-4251-885E-E580FD1DC762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FEDCDF-480D-4251-885E-E580FD1DC762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FEDCDF-480D-4251-885E-E580FD1DC762}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
