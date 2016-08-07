@@ -51,7 +51,7 @@ namespace OverloadConstractor
 	}
 */
 // Класс для хранения символов в стеке.
-
+/*
 using System;
 
 namespace OverloadConctractor
@@ -186,4 +186,43 @@ namespace OverloadConctractor
 			}
 		}
 	}
+*/
+// Продемонстрировать вызов конструктора с помощью ключевого слова this.
 
+using System;
+
+namespace OverloadConstractor
+	{
+	class XYCord
+		{
+		public Int32 x, y;
+
+		public XYCord(): this(0, 0)
+			{
+			Console.WriteLine(" В конструкторе XYCoord() ");
+			}
+		public XYCord(XYCord obj): this(obj.x, obj.y)
+			{
+			Console.WriteLine(" В конструкторе XYCoord(obj) ");
+			}
+		public XYCord(Int32 i, Int32 j)
+			{
+			Console.WriteLine(" В конструкторе XYCoord(int, int) ");
+			x = i;
+			y = j;
+			}
+		}
+	class OverloadConsDemo
+		{
+		static void Main()
+			{
+			XYCord t_1 = new XYCord();
+			XYCord t_2 = new XYCord(8, 9);
+			XYCord t_3 = new XYCord(t_2);
+
+			Console.WriteLine(" t_1.x, t_1.y: " + t_1.x + ", " + t_1.y);
+			Console.WriteLine(" t_2.x, t_2.y: " + t_2.x + ", " + t_2.y);
+			Console.WriteLine(" t_3.x, t_3.y: " + t_3.x + ", " + t_3.y);
+			}
+		}
+	}
