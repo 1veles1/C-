@@ -1,0 +1,6 @@
+H:\C#\TestTraining\TheCalledArgument\bin\Debug\TheCalledArgument.exe.config
+H:\C#\TestTraining\TheCalledArgument\bin\Debug\TheCalledArgument.exe
+H:\C#\TestTraining\TheCalledArgument\bin\Debug\TheCalledArgument.pdb
+H:\C#\TestTraining\TheCalledArgument\obj\Debug\TheNamedArgument.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\TheCalledArgument\obj\Debug\TheCalledArgument.exe
+H:\C#\TestTraining\TheCalledArgument\obj\Debug\TheCalledArgument.pdb
