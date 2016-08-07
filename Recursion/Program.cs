@@ -58,3 +58,40 @@ namespace Recursion
 	}
 */
 // Вывести символьную строку в обратном порядке, используя рекурсию.
+
+using System;
+
+namespace Recursion
+	{
+	class RevStr
+		{
+		
+		// Вывести символьную строку в обратном порядке.
+
+		public void DisplayRev(String str)
+			{
+			if(str.Length > 0)
+				DisplayRev(str.Substring(1, str.Length - 1));
+			else
+				return;
+
+			Console.Write(str[0]);
+			}
+		}
+	class RevStrDemo
+		{
+		static void Main()
+			{
+			String s = " This is test !!! ";
+
+			RevStr ob = new RevStr();
+
+			Console.WriteLine(" Исходная строка = " + s);
+
+			Console.Write(" Перевернутая строка = "); 
+			ob.DisplayRev(s);
+
+			Console.WriteLine();
+			}
+		}
+	}
