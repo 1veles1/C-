@@ -1,0 +1,6 @@
+H:\C#\TestTraining\ObjectInitialiser\bin\Debug\ObjectInitialiser.exe.config
+H:\C#\TestTraining\ObjectInitialiser\bin\Debug\ObjectInitialiser.exe
+H:\C#\TestTraining\ObjectInitialiser\bin\Debug\ObjectInitialiser.pdb
+H:\C#\TestTraining\ObjectInitialiser\obj\Debug\ObjectInitialiser.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\ObjectInitialiser\obj\Debug\ObjectInitialiser.exe
+H:\C#\TestTraining\ObjectInitialiser\obj\Debug\ObjectInitialiser.pdb

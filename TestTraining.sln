@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadMethod", "OverloadM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadConstractor", "OverloadConstractor\OverloadConstractor.csproj", "{B3FEDCDF-480D-4251-885E-E580FD1DC762}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectInitialiser", "ObjectInitialiser\ObjectInitialiser.csproj", "{00BDE239-DB23-44F0-A36F-C397A6F2EAFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{B3FEDCDF-480D-4251-885E-E580FD1DC762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3FEDCDF-480D-4251-885E-E580FD1DC762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3FEDCDF-480D-4251-885E-E580FD1DC762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00BDE239-DB23-44F0-A36F-C397A6F2EAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BDE239-DB23-44F0-A36F-C397A6F2EAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BDE239-DB23-44F0-A36F-C397A6F2EAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00BDE239-DB23-44F0-A36F-C397A6F2EAFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
