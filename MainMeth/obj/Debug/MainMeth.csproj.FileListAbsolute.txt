@@ -1,0 +1,6 @@
+H:\C#\TestTraining\MainMeth\bin\Debug\MainMeth.exe.config
+H:\C#\TestTraining\MainMeth\bin\Debug\MainMeth.exe
+H:\C#\TestTraining\MainMeth\bin\Debug\MainMeth.pdb
+H:\C#\TestTraining\MainMeth\obj\Debug\MainMeth.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\MainMeth\obj\Debug\MainMeth.exe
+H:\C#\TestTraining\MainMeth\obj\Debug\MainMeth.pdb
