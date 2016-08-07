@@ -1,0 +1,6 @@
+H:\C#\TestTraining\Recursion\bin\Debug\Recursion.exe.config
+H:\C#\TestTraining\Recursion\bin\Debug\Recursion.exe
+H:\C#\TestTraining\Recursion\bin\Debug\Recursion.pdb
+H:\C#\TestTraining\Recursion\obj\Debug\Recursion.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\Recursion\obj\Debug\Recursion.exe
+H:\C#\TestTraining\Recursion\obj\Debug\Recursion.pdb

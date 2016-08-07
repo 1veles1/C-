@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheNamedArgument", "TheCall
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMeth", "MainMeth\MainMeth.csproj", "{9A945397-A06B-402F-8690-41C923FCAE5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recursion.csproj", "{A2066D7F-C14D-4910-9895-8D2841FEE42A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{9A945397-A06B-402F-8690-41C923FCAE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A945397-A06B-402F-8690-41C923FCAE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A945397-A06B-402F-8690-41C923FCAE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2066D7F-C14D-4910-9895-8D2841FEE42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2066D7F-C14D-4910-9895-8D2841FEE42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2066D7F-C14D-4910-9895-8D2841FEE42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2066D7F-C14D-4910-9895-8D2841FEE42A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
