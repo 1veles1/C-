@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticConstractor", "Static
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticClass", "StaticClass\StaticClass.csproj", "{0DD281B3-B58A-4777-983E-613BA79F82C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadOperator", "OverloadOperator\OverloadOperator.csproj", "{B7C1C62D-9622-4F98-BF8C-2F79DEE318DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{0DD281B3-B58A-4777-983E-613BA79F82C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DD281B3-B58A-4777-983E-613BA79F82C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DD281B3-B58A-4777-983E-613BA79F82C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C1C62D-9622-4F98-BF8C-2F79DEE318DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C1C62D-9622-4F98-BF8C-2F79DEE318DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C1C62D-9622-4F98-BF8C-2F79DEE318DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C1C62D-9622-4F98-BF8C-2F79DEE318DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
