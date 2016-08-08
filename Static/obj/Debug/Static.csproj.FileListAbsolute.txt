@@ -1,0 +1,6 @@
+H:\C#\TestTraining\Static\bin\Debug\Static.exe.config
+H:\C#\TestTraining\Static\bin\Debug\Static.exe
+H:\C#\TestTraining\Static\bin\Debug\Static.pdb
+H:\C#\TestTraining\Static\obj\Debug\Static.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\Static\obj\Debug\Static.exe
+H:\C#\TestTraining\Static\obj\Debug\Static.pdb
