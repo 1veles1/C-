@@ -116,4 +116,164 @@ namespace OverloadOperator
 */
 // Пример перегрузки бинарных и унарных операторов.
 
+using System;
 
+// Класс для хранения трехмерных координат.
+class ThreeD
+	{
+	Int32 х, у, z; // трехмерные координаты
+	public ThreeD() { х = у = z = 0; }
+	public ThreeD(Int32 i, Int32 j, Int32 k) { х = i; у = j; z = k; }
+
+	// Перегрузить бинарный оператор +.
+
+	public static ThreeD operator +(ThreeD op1, ThreeD op2)
+		{
+		ThreeD result = new ThreeD();
+
+		/* Сложить координаты двух точек и возвратить результат. */
+
+		result.х = op1.х + op2.х;
+		result.у = op1.у + op2.у;
+		result.z = op1.z + op2.z;
+
+		return result;
+		}
+	
+		// Перегрузить бинарный оператор -.
+	public static ThreeD operator -(ThreeD op1, ThreeD op2)
+		{
+		ThreeD result = new ThreeD();
+
+		// Обратить внимание на порядок следования операндов:
+		// op1 — левый операнд, ор2 — правый операнд. 
+
+		result.х = op1.х - op2.х;
+		result.у = op1.у - op2.у;
+		result.z = op1.z - op2.z;
+
+		return result;
+		}
+	
+		// Перегрузить унарный оператор -.
+	public static ThreeD operator -(ThreeD op)
+		{
+		ThreeD result = new ThreeD();
+
+		result.х = -op.х;
+		result.у = -op.у;
+		result.z = -op.z;
+
+		return result;
+		}
+		
+		
+		// Перегрузить унарный оператор ++.
+	public static ThreeD operator ++(ThreeD op)
+		{
+		ThreeD result = new ThreeD();
+
+		// Возвратить результат инкрементирования.
+
+		result.х = op.х + 1;
+		result.у = op.у + 1;
+		result.z = op.z + 1;
+
+		return result;
+		}
+	
+		// Вывести координаты X, Y, Z.
+	public void Show()
+		{
+		Console.WriteLine(х + ", " + у + ", " + z);
+		}
+	}
+class ThreeDDemo
+	{
+	static void Main()
+		{
+
+		Console.ForegroundColor = ConsoleColor.DarkCyan;
+
+		Console.WriteLine();
+
+		ThreeD a = new ThreeD(1, 2, 3);
+		ThreeD b = new ThreeD(10, 10, 10);
+		ThreeD c = new ThreeD();
+
+		Console.Write(" Координаты точки a = ");
+		a.Show();
+
+		Console.WriteLine();
+
+		Console.Write(" Координаты точки b = ");
+		b.Show();
+
+		Console.WriteLine();
+
+		c = a + b; // сложить координаты точек а и b
+
+		Console.Write(" Результат сложения a + b = ");
+		c.Show();
+
+		Console.WriteLine();
+
+		c = a + b + c; // сложить координаты точек a, b и с
+
+		Console.Write(" Результат сложения a + b + с = ");
+		c.Show();
+
+		Console.WriteLine();
+
+		c = c - a; // вычесть координаты точки а
+
+		Console.Write(" Результат вычитания с - а = ");
+		c.Show();
+
+		Console.WriteLine();
+
+		c = c - b; // вычесть координаты точки b
+		Console.Write(" Результат вычитания с - b  ");
+		c.Show();
+
+		Console.WriteLine();
+
+		c = -a; // присвоить точке с отрицательные координаты точки а
+		Console.Write(" Результат присваивания - а = ");
+
+		c.Show();
+
+		Console.WriteLine();
+
+		c = a++; // присвоить точке с координаты точки а,
+				 // а затем инкрементировать их
+
+		Console.WriteLine(" Если с = а++ ");
+
+		Console.Write(" то координаты точки с = ");
+		c.Show();
+
+		Console.Write(" а координаты точки а = ");
+		a.Show();
+
+		// Установить исходные координаты (1,2,3) точки а
+
+		a = new ThreeD(1, 2, 3);
+
+		Console.Write(" \n Установка исходных координат точки а = ");
+		a.Show();
+
+		c = ++a; // инкрементировать координаты точки а,
+				 // а затем присвоить их точке с
+
+		Console.WriteLine(" \n Если с = ++а ");
+
+		Console.Write(" то координаты точки с = ");
+		c.Show();
+
+		Console.Write(" а координаты точки а = ");
+		a.Show();
+
+		Console.WriteLine();
+		}
+	}
