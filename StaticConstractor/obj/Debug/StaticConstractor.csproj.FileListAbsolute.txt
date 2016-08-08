@@ -1,0 +1,6 @@
+H:\C#\TestTraining\StaticConstractor\bin\Debug\StaticConstractor.exe.config
+H:\C#\TestTraining\StaticConstractor\bin\Debug\StaticConstractor.exe
+H:\C#\TestTraining\StaticConstractor\bin\Debug\StaticConstractor.pdb
+H:\C#\TestTraining\StaticConstractor\obj\Debug\StaticConstractor.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\StaticConstractor\obj\Debug\StaticConstractor.exe
+H:\C#\TestTraining\StaticConstractor\obj\Debug\StaticConstractor.pdb
