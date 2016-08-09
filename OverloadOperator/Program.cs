@@ -115,7 +115,7 @@ namespace OverloadOperator
 	}
 */
 // Пример перегрузки бинарных и унарных операторов.
-
+/*
 using System;
 
 // Класс для хранения трехмерных координат.
@@ -131,7 +131,7 @@ class ThreeD
 		{
 		ThreeD result = new ThreeD();
 
-		/* Сложить координаты двух точек и возвратить результат. */
+		// Сложить координаты двух точек и возвратить результат. 
 
 		result.х = op1.х + op2.х;
 		result.у = op1.у + op2.у;
@@ -275,5 +275,297 @@ class ThreeDDemo
 		a.Show();
 
 		Console.WriteLine();
+		}
+	}
+*/
+// Перегрузить бинарный оператор + дважды:
+// один раз - для сложения объектов класса ThreeD,
+// а другой раз — для сложения объекта типа ThreeD и целого значения типа int.
+/*
+using System;
+
+namespace OverloadOperator
+	{
+	class ThreeD
+		{
+		Int32 x, y, z; // трехмерные координаты
+
+		public ThreeD()
+			{
+			x = y = z = 0;
+			}
+		public ThreeD(Int32 i, Int32 j, Int32 k)
+			{
+			x = i; y = j; z = k;
+			}
+
+		// Перегрузить бинарный оператор + для сложения объектов класса ThreeD.
+
+		public static ThreeD operator + (ThreeD op_1, ThreeD op_2)
+			{
+			ThreeD result = new ThreeD();
+
+			// Сложить координаты двух точек и возвратить результат.
+
+			result.x = op_1.x + op_2.x;
+			result.y = op_1.y + op_2.y;
+			result.z = op_1.z + op_2.z;
+
+			return result;
+			}
+
+		// Перегрузить бинарный оператор + для сложения
+		// объекта типа ThreeD и целого значения типа int.
+
+		public static ThreeD operator + (ThreeD op_1, Int32 op_2)
+			{
+			ThreeD result = new ThreeD();
+
+			result.x = op_1.x + op_2;
+			result.y = op_1.y + op_2;
+			result.z = op_1.z + op_2;
+
+			return result;
+			}
+
+		// Вывести координаты X, Y, Z.
+
+		public void Show()
+			{
+			Console.WriteLine(x + "," + y + "," + z);
+			}
+		}
+	class ThreeDDemo
+		{
+		static void Main()
+			{
+			ThreeD a = new ThreeD(1, 2, 3);
+			ThreeD b = new ThreeD(10, 10, 10);
+			ThreeD c = new ThreeD();
+
+			Console.Write(" Координаты точки a = ");
+			a.Show();
+
+			Console.WriteLine();
+
+			Console.Write(" Координаты точки b = ");
+			b.Show();
+
+			Console.WriteLine();
+
+			c = a + b; // сложить объекты класса ThreeD
+
+			Console.Write(" Результат сложения a + b = ");
+			c.Show();
+
+			Console.WriteLine();
+
+			c = b + 10; //  сложить объект типа ThreeD и целое значение типа Int32
+
+			Console.Write(" Результат сложения b + 10 = ");
+			c.Show();
+			}
+		}
+	}
+*/
+// Перегрузить бинарный оператор + трижды:
+// один раз — для сложения объектов класса ThreeD,
+// второй раз — для сложения объекта типа ThreeD и целого значения типа int,
+// а третий раз — для сложения целого значения типа int и объекта типа ThreeD.
+/*
+using System;
+
+namespace OverloadOperator
+	{
+
+	// Класс для хранения трехмерных координат.
+
+	class ThreeD
+		{
+		Int32 x, y, z; // трехмерные координаты
+
+		public ThreeD()
+			{
+			x = y = z = 0;
+			}
+		public ThreeD(Int32 i, Int32 j, Int32 k)
+			{
+			x = i; y = j; z = k;
+			}
+
+		// Перегрузить бинарный оператор + для сложения объектов класса ThreeD.
+
+		public static ThreeD operator +(ThreeD op_1, ThreeD op_2)
+			{
+			ThreeD result = new ThreeD();
+
+			// Сложить координаты двух точек и возвратить результат.
+
+			result.x = op_1.x + op_2.x;
+			result.y = op_1.y + op_2.y;
+			result.z = op_1.z + op_2.z;
+
+			return result;
+			}
+
+		// Перегрузить бинарный оператор + для сложения
+		// объекта типа ThreeD и целого значения типа int.
+
+		public static ThreeD operator +(ThreeD op_1, Int32 op_2)
+			{
+			ThreeD result = new ThreeD();
+
+			result.x = op_1.x + op_2;
+			result.y = op_1.y + op_2;
+			result.z = op_1.z + op_2;
+
+			return result;
+			}
+
+		// Перегрузить бинарный оператор + для сложения
+		// целого значения типа int и объекта типа ThreeD.
+
+		public static ThreeD operator + (Int32 op_1, ThreeD op_2)
+			{
+			ThreeD result = new ThreeD();
+
+			result.x = op_1 + op_2.x;
+			result.y = op_1 + op_2.y;
+			result.z = op_1 + op_2.y;
+
+			return result;
+			}
+
+		// Вывести координаты X, Y, Z.
+
+		public void Show()
+			{
+			Console.WriteLine(x + "," + y + "," + z);
+			}
+		}
+	class ThreeDDemo
+		{
+		static void Main()
+			{
+			ThreeD a = new ThreeD(1, 2, 3);
+			ThreeD b = new ThreeD(10, 10, 10);
+			ThreeD c = new ThreeD();
+
+			Console.Write(" Координаты точки a = ");
+			a.Show();
+
+			Console.WriteLine();
+
+			Console.Write(" Координаты точки b = ");
+			b.Show();
+
+			Console.WriteLine();
+
+			c = a + b; // сложить объекты класса ThreeD
+
+			Console.Write(" Результат сложения a + b = ");
+			c.Show();
+
+			Console.WriteLine();
+
+			c = b + 10; //  сложить объект типа ThreeD и целое значение типа Int32
+
+			Console.Write(" Результат сложения b + 10 = ");
+			c.Show();
+
+			c = 15 + b; // сложить целое значение типа Int32 и объект типа ThreeD
+
+			Console.Write(" Результат сложения 15 + b = ");
+			c.Show();
+			}
+		}
+	}
+*/
+// Перегрузить операторы < и >.
+
+using System;
+
+namespace OverloadOperator
+	{
+
+	// Класс для хранения трехмерных координат.
+
+	class ThreeD
+		{
+		Int32 x, y, z; // трехмерные координаты
+		public ThreeD() { x = y = z = 0; }
+		public ThreeD(Int32 i, Int32 j, Int32 k) { x = i; y = j; z = k; }
+
+		// Перегрузить оператор <.
+
+		public static Boolean operator <(ThreeD op1, ThreeD op2)
+			{
+			if(Math.Sqrt(op1.x * op1.x + op1.y * op1.y + op1.z * op1.z) <
+
+				Math.Sqrt(op2.x * op2.x + op2.y * op2.y + op2.z * op2.z))
+
+				return true;
+			else
+				return false;
+			}
+
+		// Перегрузить оператор >.
+
+		public static Boolean operator >(ThreeD op1, ThreeD op2)
+			{
+			if(Math.Sqrt(op1.x * op1.x + op1.y * op1.y + op1.z * op1.z) >
+
+				Math.Sqrt(op2.x * op2.x + op2.y * op2.y + op2.z * op2.z))
+				return true;
+			else
+				return false;
+			}
+
+		// Вывести координаты X, Y, Z.
+
+		public void Show()
+			{
+			Console.WriteLine(x + ", " + y + ", " + z);
+			}
+		}
+	class ThreeDDemo
+		{
+		static void Main()
+			{
+			ThreeD a = new ThreeD(5, 6, 7);
+			ThreeD b = new ThreeD(10, 10, 10);
+			ThreeD c = new ThreeD(1, 2, 3);
+			ThreeD d = new ThreeD(6, 7, 5);
+
+			Console.Write("Координаты точки a: ");
+			a.Show();
+
+			Console.Write("Координаты точки b: ");
+			b.Show();
+
+			Console.Write("Координаты точки с: ");
+			c.Show();
+
+			Console.Write("Координаты точки d: ");
+			d.Show();
+
+			Console.WriteLine();
+
+			if(a > c)
+				Console.WriteLine(" а > с истинно ");
+			if(a < c)
+				Console.WriteLine(" а < с истинно ");
+			if(a > b)
+				Console.WriteLine(" а > b истинно ");
+			if(a < b)
+				Console.WriteLine(" а < b истинно ");
+			if(a > d)
+				Console.WriteLine(" а > d истинно ");
+
+			else if(a < d)
+				Console.WriteLine(" a < d истинно ");
+
+			else Console.WriteLine(" Точки a и d находятся на одном расстоянии от начала отсчета ");
+			}
 		}
 	}
