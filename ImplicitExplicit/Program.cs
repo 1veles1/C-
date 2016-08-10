@@ -187,7 +187,6 @@ namespace ImplicitExplicit
 	class Nybble
 		{
 		Int32 val; // базовый тип для хранения данных
-
 		public Nybble()
 			{
 			val = 0;
@@ -195,8 +194,9 @@ namespace ImplicitExplicit
 		public Nybble(Int32 i)
 			{
 			val = i;
-			val = val & 0xF; // сохранить 4 младших разряда
+			val = val & 0xF;  // сохранить 4 младших разряда
 			}
+			
 
 		// Перегрузить бинарный оператор + для сложения двух объектов типа Nybble.
 
@@ -205,7 +205,7 @@ namespace ImplicitExplicit
 			Nybble result = new Nybble();
 
 			result.val = op_1.val + op_2.val;
-			result.val = result.val & 0xF; // сохранить 4 младших разряда
+			//result.val = result.val & 0xF; // сохранить 4 младших разряда
 
 			return result; 
 			}
@@ -279,12 +279,14 @@ namespace ImplicitExplicit
 		public static implicit operator Nybble(Int32 op)
 			{
 			return new Nybble(op);
-			}		
+			}
+		
 		}
 	class NybbleDemo
 		{
 		static void Main()
 			{
+			
 			Nybble a = new Nybble(1);
 			Nybble b = new Nybble(10);
 			Nybble c = new Nybble();
