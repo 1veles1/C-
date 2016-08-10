@@ -196,18 +196,17 @@ namespace ImplicitExplicit
 			val = i;
 			val = val & 0xF;  // сохранить 4 младших разряда
 			}
-			
 
 		// Перегрузить бинарный оператор + для сложения двух объектов типа Nybble.
 
-		public static Nybble operator + (Nybble op_1, Nybble op_2)
+		public static Nybble operator +(Nybble op_1, Nybble op_2)
 			{
 			Nybble result = new Nybble();
 
 			result.val = op_1.val + op_2.val;
-			//result.val = result.val & 0xF; // сохранить 4 младших разряда
+			result.val = result.val & 0xF; // сохранить 4 младших разряда			
 
-			return result; 
+			return result;
 			}
 
 		// Перегрузить бинарный оператор + для сложения
