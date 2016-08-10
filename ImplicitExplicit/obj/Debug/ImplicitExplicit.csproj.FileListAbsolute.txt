@@ -1,0 +1,6 @@
+H:\C#\TestTraining\ImplicitExplicit\bin\Debug\ImplicitExplicit.exe.config
+H:\C#\TestTraining\ImplicitExplicit\bin\Debug\ImplicitExplicit.exe
+H:\C#\TestTraining\ImplicitExplicit\bin\Debug\ImplicitExplicit.pdb
+H:\C#\TestTraining\ImplicitExplicit\obj\Debug\ImplicitExplicit.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\ImplicitExplicit\obj\Debug\ImplicitExplicit.exe
+H:\C#\TestTraining\ImplicitExplicit\obj\Debug\ImplicitExplicit.pdb

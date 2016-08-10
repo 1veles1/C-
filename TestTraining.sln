@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticClass", "StaticClass\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadOperator", "OverloadOperator\OverloadOperator.csproj", "{B7C1C62D-9622-4F98-BF8C-2F79DEE318DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitExplicit", "ImplicitExplicit\ImplicitExplicit.csproj", "{00AED5C6-2376-49CE-95C4-0EF154B345AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{B7C1C62D-9622-4F98-BF8C-2F79DEE318DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7C1C62D-9622-4F98-BF8C-2F79DEE318DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7C1C62D-9622-4F98-BF8C-2F79DEE318DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00AED5C6-2376-49CE-95C4-0EF154B345AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00AED5C6-2376-49CE-95C4-0EF154B345AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00AED5C6-2376-49CE-95C4-0EF154B345AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00AED5C6-2376-49CE-95C4-0EF154B345AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
