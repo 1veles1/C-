@@ -1,0 +1,6 @@
+H:\C#\TestTraining\GetSet\bin\Debug\GetSet.exe.config
+H:\C#\TestTraining\GetSet\bin\Debug\GetSet.exe
+H:\C#\TestTraining\GetSet\bin\Debug\GetSet.pdb
+H:\C#\TestTraining\GetSet\obj\Debug\GetSet.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\GetSet\obj\Debug\GetSet.exe
+H:\C#\TestTraining\GetSet\obj\Debug\GetSet.pdb

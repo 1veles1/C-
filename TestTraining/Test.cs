@@ -170,13 +170,15 @@ namespace Test
             Console.ForegroundColor = ConsoleColor.Red;
 
             Console.WriteLine(" Выполнение цикла for в отрицательном направлении " + " \n");
-            for (x = 100; x > -100; x -= 5)
+            
+			for (x = 100; x > -100; x -= 5)
                 Console.WriteLine(x + "\n");
             
             int y;
 
             Console.WriteLine(" Выполнение цикла for в положительном направлении " + "\n");
-            for (y = -100; y < 100; y += 5)
+            
+			for (y = -100; y < 100; y += 5)
                 Console.WriteLine(y + "\n");
            
             Console.WriteLine(" Done ");
@@ -320,7 +322,8 @@ namespace Test
 
             for (i = 0, j = 100; !done; i++, j--)
             {
-                if (i * i >= j) done = true;
+                if (i * i >= j) 
+					done = true;
                 Console.WriteLine(" i и j = " + i + " и " + j + "\n");
             }
             Console.WriteLine(" Done ");

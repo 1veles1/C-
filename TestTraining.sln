@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadOperator", "Overloa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitExplicit", "ImplicitExplicit\ImplicitExplicit.csproj", "{00AED5C6-2376-49CE-95C4-0EF154B345AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetSet", "GetSet\GetSet.csproj", "{49B47BD1-5F16-459F-98A3-93FEB636B70F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{00AED5C6-2376-49CE-95C4-0EF154B345AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00AED5C6-2376-49CE-95C4-0EF154B345AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00AED5C6-2376-49CE-95C4-0EF154B345AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B47BD1-5F16-459F-98A3-93FEB636B70F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B47BD1-5F16-459F-98A3-93FEB636B70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B47BD1-5F16-459F-98A3-93FEB636B70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B47BD1-5F16-459F-98A3-93FEB636B70F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
