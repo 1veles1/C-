@@ -1,0 +1,6 @@
+H:\C#\TestTraining\Property\bin\Debug\Property.exe.config
+H:\C#\TestTraining\Property\bin\Debug\Property.exe
+H:\C#\TestTraining\Property\bin\Debug\Property.pdb
+H:\C#\TestTraining\Property\obj\Debug\Property.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\Property\obj\Debug\Property.exe
+H:\C#\TestTraining\Property\obj\Debug\Property.pdb

@@ -268,7 +268,7 @@ namespace GetSet
 	}
 */
 // Индексаторы совсем не обязательно должны оперировать отдельными массивами.
-
+/*
 using System;
 
 namespace GetSet
@@ -324,6 +324,7 @@ namespace GetSet
 			}
 		}
 	}
+*/
 
 
 

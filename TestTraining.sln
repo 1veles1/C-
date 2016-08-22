@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitExplicit", "Implici
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetSet", "GetSet\GetSet.csproj", "{49B47BD1-5F16-459F-98A3-93FEB636B70F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiDimenIndexers", "MultiDimenIndexers\MultiDimenIndexers.csproj", "{D348EF91-CA57-4813-A237-BC9DF52AB4E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property", "Property\Property.csproj", "{B6B8D7F0-37E0-4C03-876C-ACB8A44B69AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{49B47BD1-5F16-459F-98A3-93FEB636B70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49B47BD1-5F16-459F-98A3-93FEB636B70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49B47BD1-5F16-459F-98A3-93FEB636B70F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D348EF91-CA57-4813-A237-BC9DF52AB4E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D348EF91-CA57-4813-A237-BC9DF52AB4E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D348EF91-CA57-4813-A237-BC9DF52AB4E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D348EF91-CA57-4813-A237-BC9DF52AB4E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B8D7F0-37E0-4C03-876C-ACB8A44B69AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B8D7F0-37E0-4C03-876C-ACB8A44B69AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B8D7F0-37E0-4C03-876C-ACB8A44B69AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B8D7F0-37E0-4C03-876C-ACB8A44B69AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
