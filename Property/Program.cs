@@ -479,7 +479,7 @@ namespace Property
 
 			// Автоматически реализуемое и доступное только для чтения свойство Length.
 			
-		public Int32 Leght { get; private set; }
+		public Int32 Lenght { get; private set; }
 
 			// Автоматически реализуемое и доступное только для чтения свойство Error.
 
@@ -500,7 +500,7 @@ namespace Property
 				}
 
 			a = new Int32[high - low];
-			Leght = high - low;
+			Lenght = high - low;
 
 			lowerBound = low;
 			upperBound = --high;						
@@ -567,7 +567,7 @@ namespace Property
 
 			// Использовать объект ra в качестве массива.
 
-			Console.WriteLine(" Длина массива ra =  " + ra.Leght);
+			Console.WriteLine(" Длина массива ra =  " + ra.Lenght);
 
 			for(Int32 i = -5; i <= 5; i++)
 				ra[i] = i;
@@ -581,7 +581,7 @@ namespace Property
 
 			// Использовать объект ra2 в качестве массива.
 
-			Console.WriteLine(" Длина массива ra2 = " + ra2.Leght);
+			Console.WriteLine(" Длина массива ra2 = " + ra2.Lenght);
 
 			for(Int32 i = 1; i <= 10; i++)
 				ra2[i] = i;
@@ -595,7 +595,7 @@ namespace Property
 
 			// Использовать объект raЗ в качестве массива.
 
-			Console.WriteLine(" Длина массива ra3 = " + ra3.Leght);
+			Console.WriteLine(" Длина массива ra3 = " + ra3.Lenght);
 
 			for(Int32 i = -20; i <= -12; i++)
 				ra3[i] = i;

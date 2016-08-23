@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiDimenIndexers", "Multi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property", "Property\Property.csproj", "{B6B8D7F0-37E0-4C03-876C-ACB8A44B69AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{0E023377-34B6-47E4-B731-01C988409F0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{B6B8D7F0-37E0-4C03-876C-ACB8A44B69AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6B8D7F0-37E0-4C03-876C-ACB8A44B69AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6B8D7F0-37E0-4C03-876C-ACB8A44B69AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E023377-34B6-47E4-B731-01C988409F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E023377-34B6-47E4-B731-01C988409F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E023377-34B6-47E4-B731-01C988409F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E023377-34B6-47E4-B731-01C988409F0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

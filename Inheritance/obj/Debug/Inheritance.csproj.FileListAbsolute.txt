@@ -1,0 +1,6 @@
+H:\C#\TestTraining\Inheritance\bin\Debug\Inheritance.exe.config
+H:\C#\TestTraining\Inheritance\bin\Debug\Inheritance.exe
+H:\C#\TestTraining\Inheritance\bin\Debug\Inheritance.pdb
+H:\C#\TestTraining\Inheritance\obj\Debug\Inheritance.csprojResolveAssemblyReference.cache
+H:\C#\TestTraining\Inheritance\obj\Debug\Inheritance.exe
+H:\C#\TestTraining\Inheritance\obj\Debug\Inheritance.pdb
