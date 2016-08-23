@@ -1,0 +1,5 @@
+H:\C#\TestTraining\ProtectedModifier\bin\Debug\ProtectedModifier.exe.config
+H:\C#\TestTraining\ProtectedModifier\bin\Debug\ProtectedModifier.exe
+H:\C#\TestTraining\ProtectedModifier\bin\Debug\ProtectedModifier.pdb
+H:\C#\TestTraining\ProtectedModifier\obj\Debug\ProtectedModifier.exe
+H:\C#\TestTraining\ProtectedModifier\obj\Debug\ProtectedModifier.pdb

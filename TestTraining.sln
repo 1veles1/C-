@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property", "Property\Proper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{0E023377-34B6-47E4-B731-01C988409F0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectedModifier", "ProtectedModifier\ProtectedModifier.csproj", "{C24DEE7D-F852-4223-9F02-F95F94509EF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{0E023377-34B6-47E4-B731-01C988409F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E023377-34B6-47E4-B731-01C988409F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E023377-34B6-47E4-B731-01C988409F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C24DEE7D-F852-4223-9F02-F95F94509EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24DEE7D-F852-4223-9F02-F95F94509EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24DEE7D-F852-4223-9F02-F95F94509EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24DEE7D-F852-4223-9F02-F95F94509EF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
