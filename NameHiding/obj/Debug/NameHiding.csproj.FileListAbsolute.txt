@@ -1,0 +1,6 @@
+H:\C#\TestTraining\NameHiding\bin\Debug\NameHiding.exe.config
+H:\C#\TestTraining\NameHiding\bin\Debug\NameHiding.exe
+H:\C#\TestTraining\NameHiding\bin\Debug\NameHiding.pdb
+H:\C#\TestTraining\NameHiding\obj\Debug\NameHiding.exe
+H:\C#\TestTraining\NameHiding\obj\Debug\NameHiding.pdb
+H:\C#\TestTraining\NameHiding\obj\Debug\NameHiding.csprojResolveAssemblyReference.cache
